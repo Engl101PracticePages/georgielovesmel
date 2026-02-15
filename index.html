@@ -15,6 +15,8 @@
   --line:#243055;
   --accent:#8aa4ff;
   --accent2:#a7b8ff;
+  --warn:#ffb4a9;
+  --good:#7dffa8;
   --shadow:0 18px 40px rgba(0,0,0,.45);
   --focus:3px solid rgba(138,164,255,.65);
   --radius:20px;
@@ -120,6 +122,26 @@ h1{
   border-bottom: 1px solid rgba(167,184,255,.35);
 }
 
+.meta{
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: .98rem;
+}
+
+.badge{
+  display:inline-block;
+  padding: 7px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(36,48,85,.95);
+  background: rgba(12,18,36,.55);
+  font-size: .95rem;
+  margin-top: 10px;
+  margin-right: 8px;
+}
+
+.badge.good{ color: var(--good); border-color: rgba(125,255,168,.25); }
+.badge.warn{ color: var(--warn); border-color: rgba(255,180,169,.25); }
+
 .small{
   color: var(--muted);
   margin-top: 10px;
@@ -154,47 +176,78 @@ a:hover{
     <div class="grid" role="group" aria-label="Pick buttons">
       <button class="btn" type="button" onclick="pick('food')">
         <strong>Pick food</strong>
-        <span>Show one dinner option</span>
+        <span>Only shows places open right now</span>
       </button>
 
       <button class="btn" type="button" onclick="pick('dessert')">
         <strong>Pick dessert</strong>
-        <span>Show one sweet option</span>
+        <span>Only shows places open right now</span>
       </button>
 
       <button class="btn" type="button" onclick="pick('either')">
         <strong>Either</strong>
-        <span>Food or dessert</span>
+        <span>Food or dessert, open right now</span>
       </button>
 
-      <button class="btn" type="button" onclick="pick(lastMode)" id="rerollBtn" disabled>
+      <button class="btn" type="button" onclick="pick(lastMode, true)" id="rerollBtn" disabled>
         <strong>Reroll</strong>
-        <span>Show a different option</span>
+        <span>Show a different open option</span>
       </button>
     </div>
 
     <div class="result" id="result">No pick yet.</div>
+    <div id="badges"></div>
+    <div class="meta" id="meta"></div>
     <div class="small" id="status"></div>
   </div>
 
   <div class="card">
     <div class="links">
       <a href="./add.html">Add a place</a>
-      <span class="small">Tip: If it feels wrong, reroll. No guilt.</span>
+      <span class="small" id="dataStamp"></span>
     </div>
   </div>
 
 </div>
 
 <script>
+const CLOSING_SOON_MIN = 45;
+
 let restaurants = [];
 let lastMode = "either";
+let generatedAt = null;
+
+function norm(s){
+  return (s || "").toString().trim().toLowerCase();
+}
+
+function minutesUntil(iso){
+  if(!iso) return null;
+  const t = new Date(iso).getTime();
+  if(!Number.isFinite(t)) return null;
+  const mins = Math.round((t - Date.now()) / 60000);
+  return Number.isFinite(mins) ? mins : null;
+}
+
+function badge(text, cls){
+  const div = document.createElement("span");
+  div.className = `badge ${cls || ""}`.trim();
+  div.textContent = text;
+  return div;
+}
 
 async function load(){
   try{
     const res = await fetch("restaurants.json", { cache: "no-store" });
     const data = await res.json();
     restaurants = Array.isArray(data.restaurants) ? data.restaurants : [];
+    generatedAt = data.generated_at || null;
+
+    if(generatedAt){
+      const dt = new Date(generatedAt);
+      document.getElementById("dataStamp").textContent = `Updated ${dt.toLocaleString()}`;
+    }
+
     if(!restaurants.length){
       document.getElementById("status").innerText = "No restaurants yet. Add a few to the Sheet, then rerun the workflow.";
     }
@@ -203,28 +256,87 @@ async function load(){
   }
 }
 
-function pick(mode){
+function pickFrom(pool){
+  return pool[Math.floor(Math.random() * pool.length)];
+}
+
+function soonestOpener(all, mode){
+  const pool = all.filter(r => {
+    const cat = norm(r.category);
+    if(mode === "either") return true;
+    return cat === mode;
+  });
+
+  // Best effort: choose the one with the smallest positive minutes until close/open.
+  // We have next_close_iso but not next_open_iso. If everything is closed, we at least show a place
+  // and label it as closed with "check hours in Maps."
+  //
+  // If we later add next_open_iso in the updater, this will become truly "soonest opening."
+  return pool.length ? pickFrom(pool) : null;
+}
+
+function render(r, context){
+  const resultEl = document.getElementById("result");
+  const badgesEl = document.getElementById("badges");
+  const metaEl = document.getElementById("meta");
+
+  badgesEl.innerHTML = "";
+  metaEl.textContent = "";
+
+  if(!r){
+    resultEl.textContent = "No matches.";
+    return;
+  }
+
+  const url = r.google_maps_url || r.url || "#";
+  const name = r.name || "Unnamed place";
+  resultEl.innerHTML = `<a href="${url}" target="_blank" rel="noopener noreferrer">${name}</a>`;
+
+  if(r.notes) metaEl.textContent = r.notes;
+
+  const openNow = (r.open_now === true);
+  if(openNow){
+    badgesEl.appendChild(badge("Open now", "good"));
+
+    const mins = minutesUntil(r.next_close_iso);
+    if(mins !== null && mins >= 0 && mins <= CLOSING_SOON_MIN){
+      badgesEl.appendChild(badge(`Closing soon (${mins} min)`, "warn"));
+    }
+  }else{
+    badgesEl.appendChild(badge("Closed right now", "warn"));
+    if(context === "fallback"){
+      metaEl.textContent = "Everything looks closed right now. This is the best guess. Please confirm in Maps.";
+    }else{
+      metaEl.textContent = "This should not appear often. If it does, rerun the workflow or confirm in Maps.";
+    }
+  }
+}
+
+function pick(mode, isReroll=false){
   lastMode = mode;
 
   const rerollBtn = document.getElementById("rerollBtn");
   if(rerollBtn) rerollBtn.disabled = false;
 
-  const pool = restaurants.filter(r => {
-    const cat = (r.category || "").toString().trim().toLowerCase();
-    if(mode === "either") return true;
-    return cat === mode;
+  const all = restaurants;
+
+  const openPool = all.filter(r => {
+    const cat = norm(r.category);
+    const catOk = (mode === "either") ? true : (cat === mode);
+    return catOk && (r.open_now === true);
   });
 
-  if(pool.length === 0){
-    document.getElementById("result").innerText = "No matches.";
+  if(openPool.length){
+    const r = pickFrom(openPool);
+    render(r, "normal");
     return;
   }
 
-  const r = pool[Math.floor(Math.random() * pool.length)];
-  const url = r.google_maps_url || r.url || "#";
-  const name = r.name || "Unnamed place";
-  document.getElementById("result").innerHTML =
-    `<a href="${url}" target="_blank" rel="noopener noreferrer">${name}</a>`;
+  // Fallback behavior you chose: when everything is closed, show the soonest-opening place.
+  // We do not have next_open_iso yet, so we show a best-guess from the category pool
+  // and label it clearly "confirm in Maps."
+  const fallback = soonestOpener(all, mode);
+  render(fallback, "fallback");
 }
 
 load();
