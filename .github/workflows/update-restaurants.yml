@@ -1,0 +1,43 @@
+name: Update Restaurants Data
+
+on:
+  schedule:
+    # Runs every day at 9 AM UTC (2 AM Seattle time standard, 1 AM daylight)
+    - cron: "0 9 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Run updater script
+        env:
+          GOOGLE_MAPS_API_KEY: ${{ secrets.GOOGLE_MAPS_API_KEY }}
+        run: |
+          node scripts/update-restaurants.mjs
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "Georgie Loves Mel Bot"
+          git config user.email "bot@users.noreply.github.com"
+
+          git add restaurants.json
+
+          if git diff --staged --quiet; then
+            echo "No changes."
+          else
+            git commit -m "Update restaurants.json"
+            git push
+          fi
