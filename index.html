@@ -7,153 +7,227 @@
 
 <style>
 :root{
---bg:#f6f8ff;
---card:#ffffff;
---ink:#0f172a;
---muted:#475569;
---line:#dbe3f0;
---accent:#192689;
---accent2:#2b3aa8;
---danger:#b42318;
---good:#067647;
---shadow:0 14px 30px rgba(0,0,0,.08);
---focus:3px solid rgba(25,38,137,.55);
---radius:18px;
---base:19px;
+  color-scheme: dark;
+  --bg:#0b1020;
+  --card:#101a33;
+  --ink:#eef2ff;
+  --muted:#c7d2fe;
+  --line:#243055;
+  --accent:#8aa4ff;
+  --accent2:#a7b8ff;
+  --shadow:0 18px 40px rgba(0,0,0,.45);
+  --focus:3px solid rgba(138,164,255,.65);
+  --radius:20px;
+  --base:20px;
 }
 
-@media (prefers-color-scheme: dark){
-:root{
---bg:#0b1020;
---card:#101a33;
---ink:#eef2ff;
---muted:#c7d2fe;
---line:#243055;
---accent:#8aa4ff;
---accent2:#a7b8ff;
---shadow:0 14px 30px rgba(0,0,0,.35);
---focus:3px solid rgba(138,164,255,.6);
-}
-}
-
-html{font-size:var(--base);}
+html{ font-size:var(--base); }
 body{
-margin:0;
-font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-background:var(--bg);
-color:var(--ink);
+  margin:0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  background: radial-gradient(1200px 800px at 20% -10%, rgba(138,164,255,.18), transparent 55%),
+              radial-gradient(900px 700px at 90% 10%, rgba(167,184,255,.10), transparent 55%),
+              var(--bg);
+  color:var(--ink);
+  line-height:1.55;
 }
 
 .wrap{
-max-width:900px;
-margin:auto;
-padding:30px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 34px 18px 70px;
 }
 
 .card{
-background:var(--card);
-border:1px solid var(--line);
-border-radius:var(--radius);
-box-shadow:var(--shadow);
-padding:20px;
-margin-top:15px;
+  background: rgba(16,26,51,.92);
+  border: 1px solid rgba(36,48,85,.9);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 22px;
+  margin-top: 16px;
+  backdrop-filter: blur(6px);
 }
 
-button{
-font:inherit;
-border-radius:14px;
-border:1px solid var(--line);
-background:var(--card);
-color:var(--ink);
-padding:12px 16px;
-cursor:pointer;
-margin-right:10px;
+h1{
+  margin: 0 0 10px 0;
+  font-size: 1.75rem;
+  letter-spacing: .2px;
 }
 
-button.primary{
-background:var(--accent);
-color:white;
-border:none;
+.sub{
+  margin: 0;
+  color: var(--muted);
+}
+
+.grid{
+  display:grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+@media (min-width: 760px){
+  .grid{ grid-template-columns: 1fr 1fr; }
+}
+
+.btn{
+  appearance:none;
+  border: 1px solid rgba(36,48,85,.95);
+  background: rgba(12,18,36,.55);
+  color: var(--ink);
+  border-radius: 18px;
+  padding: 18px 16px;
+  min-height: 58px;
+  font: inherit;
+  cursor: pointer;
+  text-align: left;
+  transition: transform .06s ease, background .2s ease, border-color .2s ease;
+}
+
+.btn:hover{
+  background: rgba(12,18,36,.72);
+  border-color: rgba(138,164,255,.45);
+}
+
+.btn:active{ transform: translateY(1px); }
+
+.btn:focus, a:focus{
+  outline: var(--focus);
+  outline-offset: 3px;
+}
+
+.btn strong{
+  display:block;
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.btn span{
+  display:block;
+  color: var(--muted);
+  margin-top: 4px;
+  font-size: .95rem;
 }
 
 .result{
-font-size:1.4rem;
-margin-top:10px;
+  margin-top: 16px;
+  font-size: 1.35rem;
+}
+
+.result a{
+  color: var(--accent2);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(167,184,255,.35);
 }
 
 .small{
-color:var(--muted);
-margin-top:10px;
+  color: var(--muted);
+  margin-top: 10px;
+  font-size: .95rem;
 }
 
-a{color:var(--accent);}
+.links{
+  display:flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items:center;
+}
+
+a{
+  color: var(--accent2);
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+}
 </style>
 </head>
 
 <body>
-
 <div class="wrap">
 
-<div class="card">
+  <div class="card">
+    <h1>Hi Mel. This is our little dinner oracle.</h1>
+    <p class="sub">One choice. No spiral.</p>
 
-<h1>Hi Mel. This is our little dinner oracle.</h1>
+    <div class="grid" role="group" aria-label="Pick buttons">
+      <button class="btn" type="button" onclick="pick('food')">
+        <strong>Pick food</strong>
+        <span>Show one dinner option</span>
+      </button>
 
-<button class="primary" onclick="pick('food')">Pick food</button>
-<button class="primary" onclick="pick('dessert')">Pick dessert</button>
-<button onclick="pick('either')">Either</button>
-<button onclick="pick(lastMode)">Reroll</button>
+      <button class="btn" type="button" onclick="pick('dessert')">
+        <strong>Pick dessert</strong>
+        <span>Show one sweet option</span>
+      </button>
 
-<div class="result" id="result">No pick yet.</div>
+      <button class="btn" type="button" onclick="pick('either')">
+        <strong>Either</strong>
+        <span>Food or dessert</span>
+      </button>
 
-<div class="small" id="status"></div>
+      <button class="btn" type="button" onclick="pick(lastMode)" id="rerollBtn" disabled>
+        <strong>Reroll</strong>
+        <span>Show a different option</span>
+      </button>
+    </div>
 
-</div>
+    <div class="result" id="result">No pick yet.</div>
+    <div class="small" id="status"></div>
+  </div>
 
-<div class="card">
-<a href="./add.html">Add a place</a>
-</div>
+  <div class="card">
+    <div class="links">
+      <a href="./add.html">Add a place</a>
+      <span class="small">Tip: If it feels wrong, reroll. No guilt.</span>
+    </div>
+  </div>
 
 </div>
 
 <script>
-
-let restaurants=[];
-let lastMode="either";
+let restaurants = [];
+let lastMode = "either";
 
 async function load(){
-try{
-let res=await fetch("restaurants.json");
-let data=await res.json();
-restaurants=data.restaurants;
-}catch(e){
-document.getElementById("status").innerText="No restaurants yet. Add some first.";
-}
+  try{
+    const res = await fetch("restaurants.json", { cache: "no-store" });
+    const data = await res.json();
+    restaurants = Array.isArray(data.restaurants) ? data.restaurants : [];
+    if(!restaurants.length){
+      document.getElementById("status").innerText = "No restaurants yet. Add a few to the Sheet, then rerun the workflow.";
+    }
+  }catch(e){
+    document.getElementById("status").innerText = "No data yet. Add restaurants, then rerun the workflow.";
+  }
 }
 
 function pick(mode){
+  lastMode = mode;
 
-lastMode=mode;
+  const rerollBtn = document.getElementById("rerollBtn");
+  if(rerollBtn) rerollBtn.disabled = false;
 
-let pool=restaurants.filter(r=>{
-if(mode==="either")return true;
-return r.category===mode;
-});
+  const pool = restaurants.filter(r => {
+    const cat = (r.category || "").toString().trim().toLowerCase();
+    if(mode === "either") return true;
+    return cat === mode;
+  });
 
-if(pool.length===0){
-document.getElementById("result").innerText="No matches.";
-return;
-}
+  if(pool.length === 0){
+    document.getElementById("result").innerText = "No matches.";
+    return;
+  }
 
-let r=pool[Math.floor(Math.random()*pool.length)];
-
-document.getElementById("result").innerHTML=
-'<a href="'+(r.google_maps_url||r.url||"#")+'" target="_blank">'+r.name+'</a>';
-
+  const r = pool[Math.floor(Math.random() * pool.length)];
+  const url = r.google_maps_url || r.url || "#";
+  const name = r.name || "Unnamed place";
+  document.getElementById("result").innerHTML =
+    `<a href="${url}" target="_blank" rel="noopener noreferrer">${name}</a>`;
 }
 
 load();
-
 </script>
-
 </body>
 </html>
