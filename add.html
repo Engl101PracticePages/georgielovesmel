@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Add a Place</title>
+  <style>
+    :root{
+      --bg:#f6f8ff; --card:#ffffff; --ink:#0f172a; --muted:#475569; --line:#dbe3f0;
+      --accent:#192689; --shadow: 0 14px 30px rgba(0,0,0,.08);
+      --focus: 3px solid rgba(25,38,137,.55);
+      --radius: 18px; --base: 19px;
+    }
+    @media (prefers-color-scheme: dark){
+      :root{
+        --bg:#0b1020; --card:#101a33; --ink:#eef2ff; --muted:#c7d2fe; --line:#243055;
+        --accent:#8aa4ff; --shadow: 0 14px 30px rgba(0,0,0,.35);
+        --focus: 3px solid rgba(138,164,255,.6);
+      }
+    }
+    html{ font-size: var(--base); }
+    body{ margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; background:var(--bg); color:var(--ink); }
+    .wrap{ max-width: 920px; margin:0 auto; padding: 26px 18px 60px; }
+    .card{ background:var(--card); border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--shadow); padding:18px; margin-top:14px; }
+    a{ color: var(--accent); }
+    label{ display:block; color:var(--muted); margin-top:12px; }
+    input, select, textarea{
+      width:100%;
+      font:inherit;
+      border:1px solid var(--line);
+      background:var(--card);
+      color:var(--ink);
+      border-radius: 14px;
+      padding: 12px 14px;
+      min-height: 48px;
+      box-sizing:border-box;
+      margin-top: 8px;
+    }
+    textarea{ min-height: 110px; }
+    .row{ display:flex; gap:12px; flex-wrap:wrap; align-items:center; margin-top: 12px; }
+    .btn{
+      appearance:none; border:1px solid var(--line); background:var(--card); color:var(--ink);
+      border-radius: 14px; padding: 12px 14px; cursor:pointer; min-height:48px;
+      text-decoration:none; display:inline-flex; align-items:center; justify-content:center;
+    }
+    .btn.primary{ border-color:transparent; background: var(--accent); color:white; }
+    .btn:focus, input:focus, select:focus, textarea:focus, a:focus{ outline: var(--focus); outline-offset:2px; }
+    .small{ color:var(--muted); font-size:.95rem; margin-top:8px; }
+    code{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="card">
+      <h1 style="margin:0 0 8px 0; font-size:1.6rem;">Add a place</h1>
+      <p class="small" style="margin:0;">
+        This page generates a row you can paste into the Google Sheet.
+      </p>
+      <p class="small" style="margin:10px 0 0 0;">
+        <a href="./index.html">Back to the oracle</a>
+      </p>
+    </div>
+
+    <div class="card">
+      <h2 style="margin:0 0 10px 0; font-size:1.15rem;">Build the row</h2>
+
+      <label for="name">Name</label>
+      <input id="name" placeholder="Restaurant name" autocomplete="off" />
+
+      <label for="category">Category</label>
+      <select id="category">
+        <option value="food">Food</option>
+        <option value="dessert">Dessert</option>
+      </select>
+
+      <label for="maps">Google Maps link</label>
+      <input id="maps" placeholder="Paste the Google Maps link here" autocomplete="off" />
+
+      <label for="placeId">Place ID</label>
+      <input id="placeId" placeholder="Paste the Google Place ID here" autocomplete="off" />
+
+      <label for="notes">Notes</label>
+      <input id="notes" placeholder="Optional: best dish, vibe, etc." autocomplete="off" />
+
+      <label for="speed">Speed</label>
+      <select id="speed">
+        <option value="quick">Quick</option>
+        <option value="normal" selected>Normal</option>
+        <option value="slow">Slow</option>
+      </select>
+
+      <label for="price">Price</label>
+      <select id="price">
+        <option value="$">$</option>
+        <option value="$$" selected>$$</option>
+        <option value="$$$">$$$</option>
+      </select>
+
+      <div class="row">
+        <button class="btn primary" id="makeRow" type="button">Generate row</button>
+        <button class="btn" id="copyRow" type="button" disabled>Copy row</button>
+      </div>
+
+      <label for="rowOut">Row (tab-separated)</label>
+      <textarea id="rowOut" placeholder="A row you can paste into the Sheet will appear here" readonly></textarea>
+
+      <p class="small">
+        Paste into the Google Sheet on a new line. Column order is:
+        <code>name, category, google_maps_url, place_id, notes, speed, price</code>
+      </p>
+
+      <p class="small">
+        Place ID tip: open the restaurant in Google Maps, then search “Place ID finder” online if you need a quick tool.
+        We can add a built-in Place ID helper next.
+      </p>
+    </div>
+  </main>
+
+  <script>
+    const nameEl = document.getElementById("name");
+    const catEl = document.getElementById("category");
+    const mapsEl = document.getElementById("maps");
+    const placeIdEl = document.getElementById("placeId");
+    const notesEl = document.getElementById("notes");
+    const speedEl = document.getElementById("speed");
+    const priceEl = document.getElementById("price");
+    const rowOut = document.getElementById("rowOut");
+    const makeRow = document.getElementById("makeRow");
+    const copyRow = document.getElementById("copyRow");
+
+    makeRow.addEventListener("click", () => {
+      const vals = [
+        nameEl.value.trim(),
+        catEl.value,
+        mapsEl.value.trim(),
+        placeIdEl.value.trim(),
+        notesEl.value.trim(),
+        speedEl.value,
+        priceEl.value
+      ];
+      rowOut.value = vals.join("\t");
+      copyRow.disabled = !rowOut.value.trim();
+    });
+
+    copyRow.addEventListener("click", async () => {
+      try{
+        await navigator.clipboard.writeText(rowOut.value);
+      }catch{}
+    });
+  </script>
+</body>
+</html>
