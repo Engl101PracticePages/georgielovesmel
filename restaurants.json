@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-15T23:15:48.918Z",
+  "generated_at": "2026-02-16T11:28:20.223Z",
   "source_csv": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ9pFuDf9lpudF0_WfUJ2cJlbowZMmtV9VYxnTDeSq4uFMRUnm3yMZzro982N_C9WrDoXYf9GH_5VM5/pub?output=csv",
   "counts": {
     "total_rows": 33,
@@ -31,7 +31,7 @@
       "website": "https://www.musangseattle.com/",
       "phone": "(206) 535-5564",
       "url": "https://maps.google.com/?cid=589181789081006747",
-      "next_close_iso": "2026-02-16T06:00:00.000Z",
+      "next_close_iso": "2026-02-17T06:00:00.000Z",
       "business_status": "OPERATIONAL",
       "utc_offset": -480
     },
@@ -46,7 +46,7 @@
       "address": "504 5th Ave S #109, Seattle, WA 98104, USA",
       "lat": 47.5978751,
       "lng": -122.3274926,
-      "open_now": true,
+      "open_now": false,
       "weekday_text": [
         "Monday: 11:00 AM – 9:00 PM",
         "Tuesday: 11:00 AM – 9:00 PM",
@@ -59,7 +59,7 @@
       "website": "https://www.doughzonedumplinghouse.com/",
       "phone": "(206) 285-9999",
       "url": "https://maps.google.com/?cid=11165046525887535209",
-      "next_close_iso": "2026-02-16T05:00:00.000Z",
+      "next_close_iso": "2026-02-17T05:00:00.000Z",
       "business_status": "OPERATIONAL",
       "utc_offset": -480
     },
@@ -74,7 +74,7 @@
       "address": "161 S Washington St, Seattle, WA 98104, USA",
       "lat": 47.6007541,
       "lng": -122.3323471,
-      "open_now": true,
+      "open_now": false,
       "weekday_text": [
         "Monday: 9:00 AM – 5:00 PM",
         "Tuesday: 9:00 AM – 5:00 PM",
@@ -87,7 +87,7 @@
       "website": "http://saigondripcafe.com/",
       "phone": "(206) 280-1797",
       "url": "https://maps.google.com/?cid=2683149111059440644",
-      "next_close_iso": "2026-02-16T00:00:00.000Z",
+      "next_close_iso": "2026-02-17T01:00:00.000Z",
       "business_status": "OPERATIONAL",
       "utc_offset": -480
     },
@@ -130,7 +130,7 @@
       "address": "1660 Harbor Ave SW, Seattle, WA 98126, USA",
       "lat": 47.58943619999999,
       "lng": -122.3805702,
-      "open_now": true,
+      "open_now": false,
       "weekday_text": [
         "Monday: 11:00 AM – 8:00 PM",
         "Tuesday: 11:00 AM – 8:00 PM",
@@ -143,7 +143,7 @@
       "website": "http://www.marinationmobile.com/",
       "phone": "(206) 328-8226",
       "url": "https://maps.google.com/?cid=6485076603440081706",
-      "next_close_iso": "2026-02-16T04:00:00.000Z",
+      "next_close_iso": "2026-02-17T04:00:00.000Z",
       "business_status": "OPERATIONAL",
       "utc_offset": -480
     },
@@ -158,7 +158,7 @@
       "address": "714 E Pike St Suite A, Seattle, WA 98122, USA",
       "lat": 47.6141937,
       "lng": -122.3232668,
-      "open_now": true,
+      "open_now": false,
       "weekday_text": [
         "Monday: 11:00 AM – 11:00 PM",
         "Tuesday: 11:00 AM – 11:00 PM",
@@ -171,7 +171,7 @@
       "website": "https://www.saltandstraw.com/",
       "phone": "(206) 258-4574",
       "url": "https://maps.google.com/?cid=8055852349769959677",
-      "next_close_iso": "2026-02-16T07:00:00.000Z",
+      "next_close_iso": "2026-02-17T07:00:00.000Z",
       "business_status": "OPERATIONAL",
       "utc_offset": -480
     },
@@ -186,7 +186,7 @@
       "address": "1519 14th Ave, Seattle, WA 98122, USA",
       "lat": 47.6147255,
       "lng": -122.3144481,
-      "open_now": true,
+      "open_now": false,
       "weekday_text": [
         "Monday: 11:00 AM – 9:00 PM",
         "Tuesday: 5:00 – 9:00 PM",
@@ -199,7 +199,7 @@
       "website": "http://www.nueseattle.com/",
       "phone": "(206) 257-0312",
       "url": "https://maps.google.com/?cid=12289267041559289933",
-      "next_close_iso": "2026-02-16T05:00:00.000Z",
+      "next_close_iso": "2026-02-17T05:00:00.000Z",
       "business_status": "OPERATIONAL",
       "utc_offset": -480
     },
@@ -214,7 +214,7 @@
       "address": "2963 4th Ave S, Seattle, WA 98134, USA",
       "lat": 47.5758303,
       "lng": -122.3294821,
-      "open_now": true,
+      "open_now": false,
       "weekday_text": [
         "Monday: 10:30 AM – 11:00 PM",
         "Tuesday: 10:30 AM – 11:00 PM",
@@ -227,7 +227,7 @@
       "website": "http://www.seattleorientexpress.com/",
       "phone": "(206) 682-0683",
       "url": "https://maps.google.com/?cid=7480556571616565291",
-      "next_close_iso": "2026-02-16T07:00:00.000Z",
+      "next_close_iso": "2026-02-17T07:00:00.000Z",
       "business_status": "OPERATIONAL",
       "utc_offset": -480
     },
@@ -242,7 +242,7 @@
       "address": "6118 12th Ave S, Seattle, WA 98108, USA",
       "lat": 47.5482374,
       "lng": -122.3170496,
-      "open_now": true,
+      "open_now": false,
       "weekday_text": [
         "Monday: 11:30 AM – 8:00 PM",
         "Tuesday: 11:30 AM – 8:00 PM",
@@ -255,7 +255,7 @@
       "website": "http://www.ciudadseattle.com/",
       "phone": "(206) 717-2984",
       "url": "https://maps.google.com/?cid=12407465366145393196",
-      "next_close_iso": "2026-02-16T04:00:00.000Z",
+      "next_close_iso": "2026-02-17T04:00:00.000Z",
       "business_status": "OPERATIONAL",
       "utc_offset": -480
     },
@@ -395,7 +395,7 @@
       "website": "http://momijiseattle.com/",
       "phone": "(206) 457-4068",
       "url": "https://maps.google.com/?cid=10791137747693922367",
-      "next_close_iso": "2026-02-16T07:00:00.000Z",
+      "next_close_iso": "2026-02-17T07:00:00.000Z",
       "business_status": "OPERATIONAL",
       "utc_offset": -480
     },
@@ -410,7 +410,7 @@
       "address": "917 E Pine St, Seattle, WA 98122, USA",
       "lat": 47.61511100000001,
       "lng": -122.31977,
-      "open_now": true,
+      "open_now": false,
       "weekday_text": [
         "Monday: 12:00 – 10:00 PM",
         "Tuesday: 12:00 – 10:00 PM",
@@ -423,7 +423,7 @@
       "website": "https://www.mollymoon.com/locations/capitol-hill",
       "phone": "(206) 294-4389",
       "url": "https://maps.google.com/?cid=12798367361977727508",
-      "next_close_iso": "2026-02-16T06:00:00.000Z",
+      "next_close_iso": "2026-02-17T06:00:00.000Z",
       "business_status": "OPERATIONAL",
       "utc_offset": -480
     },
@@ -438,7 +438,7 @@
       "address": "137 15th Ave E, Seattle, WA 98112, USA",
       "lat": 47.619506,
       "lng": -122.312902,
-      "open_now": true,
+      "open_now": false,
       "weekday_text": [
         "Monday: Closed",
         "Tuesday: Closed",
@@ -451,7 +451,7 @@
       "website": "http://www.bakerynouveau.com/",
       "phone": "(206) 858-6957",
       "url": "https://maps.google.com/?cid=13746202793565079003",
-      "next_close_iso": "2026-02-16T01:00:00.000Z",
+      "next_close_iso": "2026-02-19T01:00:00.000Z",
       "business_status": "OPERATIONAL",
       "utc_offset": -480
     },
@@ -466,7 +466,7 @@
       "address": "7413 Fauntleroy Wy SW, Seattle, WA 98136, USA",
       "lat": 47.5366162,
       "lng": -122.3924234,
-      "open_now": true,
+      "open_now": false,
       "weekday_text": [
         "Monday: 10:00 AM – 9:00 PM",
         "Tuesday: 10:00 AM – 9:00 PM",
@@ -479,7 +479,7 @@
       "website": "http://ordertaquitosfeliz.com/",
       "phone": "(206) 353-4046",
       "url": "https://maps.google.com/?cid=4978813847307633745",
-      "next_close_iso": "2026-02-16T04:00:00.000Z",
+      "next_close_iso": "2026-02-17T05:00:00.000Z",
       "business_status": "OPERATIONAL",
       "utc_offset": -480
     },
@@ -494,7 +494,7 @@
       "address": "8953 Aurora Ave N, Seattle, WA 98103, USA",
       "lat": 47.6940017,
       "lng": -122.3450245,
-      "open_now": true,
+      "open_now": false,
       "weekday_text": [
         "Monday: 10:00 AM – 10:00 PM",
         "Tuesday: 10:00 AM – 10:00 PM",
@@ -507,7 +507,7 @@
       "website": null,
       "phone": "(206) 468-6594",
       "url": "https://maps.google.com/?cid=14590413675973545399",
-      "next_close_iso": "2026-02-16T06:00:00.000Z",
+      "next_close_iso": "2026-02-17T06:00:00.000Z",
       "business_status": "OPERATIONAL",
       "utc_offset": -480
     },
@@ -522,7 +522,7 @@
       "address": "3924 Airport Wy S, Seattle, WA 98108, USA",
       "lat": 47.5682792,
       "lng": -122.3223369,
-      "open_now": true,
+      "open_now": false,
       "weekday_text": [
         "Monday: 7:00 – 10:00 AM, 11:00 AM – 7:00 PM",
         "Tuesday: 7:00 – 10:00 AM, 11:00 AM – 8:00 PM",
@@ -535,7 +535,7 @@
       "website": "http://jacksbbq.com/",
       "phone": "(206) 467-4038",
       "url": "https://maps.google.com/?cid=10668809599050245044",
-      "next_close_iso": "2026-02-16T04:00:00.000Z",
+      "next_close_iso": "2026-02-16T18:00:00.000Z",
       "business_status": "OPERATIONAL",
       "utc_offset": -480
     },
@@ -550,7 +550,7 @@
       "address": "125 SW 148th St B, Burien, WA 98166, USA",
       "lat": 47.4698339,
       "lng": -122.3359436,
-      "open_now": true,
+      "open_now": false,
       "weekday_text": [
         "Monday: 8:00 AM – 8:00 PM",
         "Tuesday: 8:00 AM – 8:00 PM",
@@ -563,7 +563,7 @@
       "website": "https://www.hkmstores.com/",
       "phone": "(206) 420-3239",
       "url": "https://maps.google.com/?cid=2992684964199207215",
-      "next_close_iso": "2026-02-16T04:00:00.000Z",
+      "next_close_iso": "2026-02-17T04:00:00.000Z",
       "business_status": "OPERATIONAL",
       "utc_offset": -480
     },
@@ -606,7 +606,7 @@
       "address": "4225 Fremont Ave N, Seattle, WA 98103, USA",
       "lat": 47.658486,
       "lng": -122.350311,
-      "open_now": true,
+      "open_now": false,
       "weekday_text": [
         "Monday: 11:00 AM – 6:00 PM",
         "Tuesday: 11:00 AM – 9:00 PM",
@@ -619,7 +619,7 @@
       "website": "http://www.paseo.com/",
       "phone": "(206) 545-7440",
       "url": "https://maps.google.com/?cid=7384135793992419982",
-      "next_close_iso": "2026-02-16T02:00:00.000Z",
+      "next_close_iso": "2026-02-17T02:00:00.000Z",
       "business_status": "OPERATIONAL",
       "utc_offset": -480
     },
@@ -634,7 +634,7 @@
       "address": "1030 Elliott Ave W, Seattle, WA 98119, USA",
       "lat": 47.628317,
       "lng": -122.3702293,
-      "open_now": true,
+      "open_now": false,
       "weekday_text": [
         "Monday: 7:00 AM – 5:00 PM",
         "Tuesday: 7:00 AM – 5:00 PM",
@@ -647,7 +647,7 @@
       "website": "http://www.fujibakeryinc.com/",
       "phone": "(206) 216-3616",
       "url": "https://maps.google.com/?cid=5322400473830894776",
-      "next_close_iso": "2026-02-16T00:00:00.000Z",
+      "next_close_iso": "2026-02-17T01:00:00.000Z",
       "business_status": "OPERATIONAL",
       "utc_offset": -480
     },
@@ -723,7 +723,7 @@
       "website": "https://www.meeshaforyou.com/",
       "phone": "(206) 632-0135",
       "url": "https://maps.google.com/?cid=8369219470055174701",
-      "next_close_iso": "2026-02-16T05:00:00.000Z",
+      "next_close_iso": "2026-02-17T05:00:00.000Z",
       "business_status": "OPERATIONAL",
       "utc_offset": -480
     },
@@ -738,7 +738,7 @@
       "address": "116 1st Ave S, Seattle, WA 98104, USA",
       "lat": 47.601122,
       "lng": -122.333951,
-      "open_now": true,
+      "open_now": false,
       "weekday_text": [
         "Monday: 11:00 AM – 10:00 PM",
         "Tuesday: 11:00 AM – 10:00 PM",
@@ -751,7 +751,7 @@
       "website": "http://www.damntheweather.com/",
       "phone": "(206) 946-1283",
       "url": "https://maps.google.com/?cid=3851081720853922758",
-      "next_close_iso": "2026-02-16T00:00:00.000Z",
+      "next_close_iso": "2026-02-17T06:00:00.000Z",
       "business_status": "OPERATIONAL",
       "utc_offset": -480
     },
@@ -779,7 +779,7 @@
       "website": "http://thecorsonbuilding.com/",
       "phone": "(206) 762-3330",
       "url": "https://maps.google.com/?cid=11544047859772443308",
-      "next_close_iso": "2026-02-16T05:00:00.000Z",
+      "next_close_iso": "2026-02-20T05:30:00.000Z",
       "business_status": "OPERATIONAL",
       "utc_offset": -480
     },
@@ -794,7 +794,7 @@
       "address": "1501 Melrose Ave, Seattle, WA 98122, USA",
       "lat": 47.6143982,
       "lng": -122.3280831,
-      "open_now": true,
+      "open_now": false,
       "weekday_text": [
         "Monday: 4:00 – 10:00 PM",
         "Tuesday: 4:00 – 10:00 PM",
@@ -807,7 +807,7 @@
       "website": "http://terraplata.com/",
       "phone": "(206) 325-1501",
       "url": "https://maps.google.com/?cid=16645826047934183778",
-      "next_close_iso": "2026-02-16T05:00:00.000Z",
+      "next_close_iso": "2026-02-17T06:00:00.000Z",
       "business_status": "OPERATIONAL",
       "utc_offset": -480
     },
@@ -835,7 +835,7 @@
       "website": "https://www.violetseattle.com/",
       "phone": "(206) 695-2588",
       "url": "https://maps.google.com/?cid=18261799574552248449",
-      "next_close_iso": "2026-02-16T06:00:00.000Z",
+      "next_close_iso": "2026-02-18T06:00:00.000Z",
       "business_status": "OPERATIONAL",
       "utc_offset": -480
     },
@@ -863,7 +863,7 @@
       "website": "http://www.hamdiseattle.com/",
       "phone": "(206) 561-6953",
       "url": "https://maps.google.com/?cid=3119816545497675669",
-      "next_close_iso": "2026-02-16T05:00:00.000Z",
+      "next_close_iso": "2026-02-20T05:00:00.000Z",
       "business_status": "OPERATIONAL",
       "utc_offset": -480
     },
@@ -878,7 +878,7 @@
       "address": "1001 Alaskan Wy Ste. 102, Seattle, WA 98104, USA",
       "lat": 47.6040335,
       "lng": -122.3395662,
-      "open_now": true,
+      "open_now": false,
       "weekday_text": [
         "Monday: 11:00 AM – 8:00 PM",
         "Tuesday: 11:00 AM – 8:00 PM",
@@ -891,7 +891,7 @@
       "website": "https://www.ivars.com/acres",
       "phone": "(206) 624-6852",
       "url": "https://maps.google.com/?cid=16553677074958837107",
-      "next_close_iso": "2026-02-16T04:00:00.000Z",
+      "next_close_iso": "2026-02-17T04:00:00.000Z",
       "business_status": "OPERATIONAL",
       "utc_offset": -480
     },
@@ -919,7 +919,7 @@
       "website": "https://seattlefarmersmarkets.org/wsfm",
       "phone": "(206) 632-5234",
       "url": "https://maps.google.com/?cid=14865916807631669865",
-      "next_close_iso": null,
+      "next_close_iso": "2026-02-22T22:00:00.000Z",
       "business_status": "OPERATIONAL",
       "utc_offset": -480
     }
