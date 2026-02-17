@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-16T11:28:20.223Z",
+  "generated_at": "2026-02-17T11:28:47.621Z",
   "source_csv": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ9pFuDf9lpudF0_WfUJ2cJlbowZMmtV9VYxnTDeSq4uFMRUnm3yMZzro982N_C9WrDoXYf9GH_5VM5/pub?output=csv",
   "counts": {
     "total_rows": 33,
@@ -31,7 +31,7 @@
       "website": "https://www.musangseattle.com/",
       "phone": "(206) 535-5564",
       "url": "https://maps.google.com/?cid=589181789081006747",
-      "next_close_iso": "2026-02-17T06:00:00.000Z",
+      "next_close_iso": "2026-02-19T06:00:00.000Z",
       "business_status": "OPERATIONAL",
       "utc_offset": -480
     },
@@ -59,7 +59,7 @@
       "website": "https://www.doughzonedumplinghouse.com/",
       "phone": "(206) 285-9999",
       "url": "https://maps.google.com/?cid=11165046525887535209",
-      "next_close_iso": "2026-02-17T05:00:00.000Z",
+      "next_close_iso": "2026-02-18T05:00:00.000Z",
       "business_status": "OPERATIONAL",
       "utc_offset": -480
     },
@@ -87,7 +87,7 @@
       "website": "http://saigondripcafe.com/",
       "phone": "(206) 280-1797",
       "url": "https://maps.google.com/?cid=2683149111059440644",
-      "next_close_iso": "2026-02-17T01:00:00.000Z",
+      "next_close_iso": "2026-02-18T01:00:00.000Z",
       "business_status": "OPERATIONAL",
       "utc_offset": -480
     },
@@ -115,7 +115,7 @@
       "website": "https://www.toasttab.com/the-berliner-doner-kebab-428-westlake-ave-n?utm_source=google&utm_medium=organic&utm_campaign=gmb-oo-web",
       "phone": "(206) 623-5425",
       "url": "https://maps.google.com/?cid=718232246654827628",
-      "next_close_iso": "2026-02-17T04:00:00.000Z",
+      "next_close_iso": "2026-02-18T04:00:00.000Z",
       "business_status": "OPERATIONAL",
       "utc_offset": -480
     },
@@ -143,7 +143,7 @@
       "website": "http://www.marinationmobile.com/",
       "phone": "(206) 328-8226",
       "url": "https://maps.google.com/?cid=6485076603440081706",
-      "next_close_iso": "2026-02-17T04:00:00.000Z",
+      "next_close_iso": "2026-02-18T04:00:00.000Z",
       "business_status": "OPERATIONAL",
       "utc_offset": -480
     },
@@ -171,7 +171,7 @@
       "website": "https://www.saltandstraw.com/",
       "phone": "(206) 258-4574",
       "url": "https://maps.google.com/?cid=8055852349769959677",
-      "next_close_iso": "2026-02-17T07:00:00.000Z",
+      "next_close_iso": "2026-02-18T07:00:00.000Z",
       "business_status": "OPERATIONAL",
       "utc_offset": -480
     },
@@ -199,7 +199,7 @@
       "website": "http://www.nueseattle.com/",
       "phone": "(206) 257-0312",
       "url": "https://maps.google.com/?cid=12289267041559289933",
-      "next_close_iso": "2026-02-17T05:00:00.000Z",
+      "next_close_iso": "2026-02-18T05:00:00.000Z",
       "business_status": "OPERATIONAL",
       "utc_offset": -480
     },
@@ -227,7 +227,7 @@
       "website": "http://www.seattleorientexpress.com/",
       "phone": "(206) 682-0683",
       "url": "https://maps.google.com/?cid=7480556571616565291",
-      "next_close_iso": "2026-02-17T07:00:00.000Z",
+      "next_close_iso": "2026-02-18T07:00:00.000Z",
       "business_status": "OPERATIONAL",
       "utc_offset": -480
     },
@@ -255,7 +255,7 @@
       "website": "http://www.ciudadseattle.com/",
       "phone": "(206) 717-2984",
       "url": "https://maps.google.com/?cid=12407465366145393196",
-      "next_close_iso": "2026-02-17T04:00:00.000Z",
+      "next_close_iso": "2026-02-18T04:00:00.000Z",
       "business_status": "OPERATIONAL",
       "utc_offset": -480
     },
@@ -283,7 +283,7 @@
       "website": "http://www.marutashoten.com/",
       "phone": "(206) 767-5002",
       "url": "https://maps.google.com/?cid=6319113623883067036",
-      "next_close_iso": "2026-02-17T02:00:00.000Z",
+      "next_close_iso": "2026-02-18T02:00:00.000Z",
       "business_status": "OPERATIONAL",
       "utc_offset": -480
     },
@@ -311,7 +311,7 @@
       "website": "https://order.toasttab.com/online/bopbox",
       "phone": "(206) 257-4787",
       "url": "https://maps.google.com/?cid=12969787587265329481",
-      "next_close_iso": "2026-02-16T23:00:00.000Z",
+      "next_close_iso": "2026-02-17T23:00:00.000Z",
       "business_status": "OPERATIONAL",
       "utc_offset": -480
     },
@@ -367,7 +367,7 @@
       "website": "http://voicaphe.com/",
       "phone": null,
       "url": "https://maps.google.com/?cid=7645227262176573922",
-      "next_close_iso": "2026-02-17T00:00:00.000Z",
+      "next_close_iso": "2026-02-18T00:00:00.000Z",
       "business_status": "OPERATIONAL",
       "utc_offset": -480
     },
@@ -395,7 +395,7 @@
       "website": "http://momijiseattle.com/",
       "phone": "(206) 457-4068",
       "url": "https://maps.google.com/?cid=10791137747693922367",
-      "next_close_iso": "2026-02-17T07:00:00.000Z",
+      "next_close_iso": "2026-02-18T07:00:00.000Z",
       "business_status": "OPERATIONAL",
       "utc_offset": -480
     },
@@ -423,7 +423,7 @@
       "website": "https://www.mollymoon.com/locations/capitol-hill",
       "phone": "(206) 294-4389",
       "url": "https://maps.google.com/?cid=12798367361977727508",
-      "next_close_iso": "2026-02-17T06:00:00.000Z",
+      "next_close_iso": "2026-02-18T06:00:00.000Z",
       "business_status": "OPERATIONAL",
       "utc_offset": -480
     },
@@ -479,7 +479,7 @@
       "website": "http://ordertaquitosfeliz.com/",
       "phone": "(206) 353-4046",
       "url": "https://maps.google.com/?cid=4978813847307633745",
-      "next_close_iso": "2026-02-17T05:00:00.000Z",
+      "next_close_iso": "2026-02-18T05:00:00.000Z",
       "business_status": "OPERATIONAL",
       "utc_offset": -480
     },
@@ -507,7 +507,7 @@
       "website": null,
       "phone": "(206) 468-6594",
       "url": "https://maps.google.com/?cid=14590413675973545399",
-      "next_close_iso": "2026-02-17T06:00:00.000Z",
+      "next_close_iso": "2026-02-18T06:00:00.000Z",
       "business_status": "OPERATIONAL",
       "utc_offset": -480
     },
@@ -535,7 +535,7 @@
       "website": "http://jacksbbq.com/",
       "phone": "(206) 467-4038",
       "url": "https://maps.google.com/?cid=10668809599050245044",
-      "next_close_iso": "2026-02-16T18:00:00.000Z",
+      "next_close_iso": "2026-02-17T18:00:00.000Z",
       "business_status": "OPERATIONAL",
       "utc_offset": -480
     },
@@ -563,7 +563,7 @@
       "website": "https://www.hkmstores.com/",
       "phone": "(206) 420-3239",
       "url": "https://maps.google.com/?cid=2992684964199207215",
-      "next_close_iso": "2026-02-17T04:00:00.000Z",
+      "next_close_iso": "2026-02-18T04:00:00.000Z",
       "business_status": "OPERATIONAL",
       "utc_offset": -480
     },
@@ -591,7 +591,7 @@
       "website": "http://www.tatsdeli.com/",
       "phone": "(206) 264-8287",
       "url": "https://maps.google.com/?cid=8197379568669459050",
-      "next_close_iso": "2026-02-16T22:30:00.000Z",
+      "next_close_iso": "2026-02-17T22:30:00.000Z",
       "business_status": "OPERATIONAL",
       "utc_offset": -480
     },
@@ -619,7 +619,7 @@
       "website": "http://www.paseo.com/",
       "phone": "(206) 545-7440",
       "url": "https://maps.google.com/?cid=7384135793992419982",
-      "next_close_iso": "2026-02-17T02:00:00.000Z",
+      "next_close_iso": "2026-02-18T05:00:00.000Z",
       "business_status": "OPERATIONAL",
       "utc_offset": -480
     },
@@ -647,7 +647,7 @@
       "website": "http://www.fujibakeryinc.com/",
       "phone": "(206) 216-3616",
       "url": "https://maps.google.com/?cid=5322400473830894776",
-      "next_close_iso": "2026-02-17T01:00:00.000Z",
+      "next_close_iso": "2026-02-18T01:00:00.000Z",
       "business_status": "OPERATIONAL",
       "utc_offset": -480
     },
@@ -723,7 +723,7 @@
       "website": "https://www.meeshaforyou.com/",
       "phone": "(206) 632-0135",
       "url": "https://maps.google.com/?cid=8369219470055174701",
-      "next_close_iso": "2026-02-17T05:00:00.000Z",
+      "next_close_iso": "2026-02-19T05:00:00.000Z",
       "business_status": "OPERATIONAL",
       "utc_offset": -480
     },
@@ -751,7 +751,7 @@
       "website": "http://www.damntheweather.com/",
       "phone": "(206) 946-1283",
       "url": "https://maps.google.com/?cid=3851081720853922758",
-      "next_close_iso": "2026-02-17T06:00:00.000Z",
+      "next_close_iso": "2026-02-18T06:00:00.000Z",
       "business_status": "OPERATIONAL",
       "utc_offset": -480
     },
@@ -807,7 +807,7 @@
       "website": "http://terraplata.com/",
       "phone": "(206) 325-1501",
       "url": "https://maps.google.com/?cid=16645826047934183778",
-      "next_close_iso": "2026-02-17T06:00:00.000Z",
+      "next_close_iso": "2026-02-18T06:00:00.000Z",
       "business_status": "OPERATIONAL",
       "utc_offset": -480
     },
@@ -857,7 +857,7 @@
         "Wednesday: Closed",
         "Thursday: 5:00 – 9:00 PM",
         "Friday: 5:00 – 9:00 PM",
-        "Saturday: 4:00 – 11:00 PM",
+        "Saturday: 5:00 – 9:00 PM",
         "Sunday: 5:00 – 9:00 PM"
       ],
       "website": "http://www.hamdiseattle.com/",
@@ -891,7 +891,7 @@
       "website": "https://www.ivars.com/acres",
       "phone": "(206) 624-6852",
       "url": "https://maps.google.com/?cid=16553677074958837107",
-      "next_close_iso": "2026-02-17T04:00:00.000Z",
+      "next_close_iso": "2026-02-18T04:00:00.000Z",
       "business_status": "OPERATIONAL",
       "utc_offset": -480
     },
