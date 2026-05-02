@@ -1,305 +1,927 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Seattle Date Night List</title>
-  <style>
-    :root {
-      --ink:#181018; --muted:#766a78; --paper:#fbf6f7; --paper2:#fffafd;
-      --midnight:#100b18; --plum:#26132f; --wine:#6f1738; --berry:#a72652;
-      --rose:#e9a7b7; --blush:#f6d8df; --champagne:#f3d990; --cream:#fff8ef;
-      --line:rgba(60,28,50,.14); --glass:rgba(255,250,253,.72);
-      --shadow:0 30px 90px rgba(24,10,24,.22); --shadow2:0 16px 42px rgba(24,10,24,.14);
-      --radius:28px; --radius2:18px; --focus:#f3d990;
+{
+  "generated_at": "2026-05-02T10:00:48.597Z",
+  "source_csv": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ9pFuDf9lpudF0_WfUJ2cJlbowZMmtV9VYxnTDeSq4uFMRUnm3yMZzro982N_C9WrDoXYf9GH_5VM5/pub?output=csv",
+  "counts": {
+    "total_rows": 33,
+    "places_ok": 33,
+    "places_failed": 0
+  },
+  "restaurants": [
+    {
+      "name": "Musang",
+      "category": "food",
+      "google_maps_url": "https://maps.google.com/?q=Musang+Seattle",
+      "place_id": "ChIJB_pIoJ5rkFQRm3JNLrcxLQg",
+      "notes": "Modern Filipino on Beacon Hill, incredible sisig and seasonal menu, $$$",
+      "speed": "normal",
+      "price": "$$$",
+      "address": "2524 Beacon Ave S, Seattle, WA 98144, USA",
+      "lat": 47.5803751,
+      "lng": -122.3127377,
+      "open_now": false,
+      "weekday_text": [
+        "Monday: 5:00 – 10:00 PM",
+        "Tuesday: Closed",
+        "Wednesday: 5:00 – 10:00 PM",
+        "Thursday: 5:00 – 10:00 PM",
+        "Friday: 5:00 – 10:00 PM",
+        "Saturday: 11:00 AM – 2:00 PM, 5:00 – 10:00 PM",
+        "Sunday: 11:00 AM – 2:00 PM, 5:00 – 10:00 PM"
+      ],
+      "website": "https://www.musangseattle.com/",
+      "phone": "(206) 535-5564",
+      "url": "https://maps.google.com/?cid=589181789081006747",
+      "next_close_iso": "2026-05-02T21:00:00.000Z",
+      "business_status": "OPERATIONAL",
+      "utc_offset": -420
+    },
+    {
+      "name": "Dough Zone Dumpling House",
+      "category": "food",
+      "google_maps_url": "https://maps.google.com/?q=Dough+Zone+Dumpling+House+Seattle+International+District",
+      "place_id": "ChIJIfHalrxqkFQRaVg8DKk28po",
+      "notes": "Soup dumplings and noodles, fast and reliable CID spot, $$",
+      "speed": "quick",
+      "price": "$$",
+      "address": "504 5th Ave S #109, Seattle, WA 98104, USA",
+      "lat": 47.5978751,
+      "lng": -122.3274926,
+      "open_now": false,
+      "weekday_text": [
+        "Monday: 11:00 AM – 9:00 PM",
+        "Tuesday: 11:00 AM – 9:00 PM",
+        "Wednesday: 11:00 AM – 9:00 PM",
+        "Thursday: 11:00 AM – 9:00 PM",
+        "Friday: 11:00 AM – 10:00 PM",
+        "Saturday: 11:00 AM – 10:00 PM",
+        "Sunday: 11:00 AM – 9:00 PM"
+      ],
+      "website": "https://www.doughzonedumplinghouse.com/",
+      "phone": "(206) 285-9999",
+      "url": "https://maps.google.com/?cid=11165046525887535209",
+      "next_close_iso": "2026-05-03T05:00:00.000Z",
+      "business_status": "OPERATIONAL",
+      "utc_offset": -420
+    },
+    {
+      "name": "Saigon Drip Cafe",
+      "category": "food",
+      "google_maps_url": "https://maps.google.com/?q=Saigon+Drip+Cafe+Seattle",
+      "place_id": "ChIJo_oHZdxrkFQRBGQajOZ1PCU",
+      "notes": "Vietnamese dip sandwiches and strong coffee, Pioneer Square, $$",
+      "speed": "quick",
+      "price": "$$",
+      "address": "161 S Washington St, Seattle, WA 98104, USA",
+      "lat": 47.6007541,
+      "lng": -122.3323471,
+      "open_now": false,
+      "weekday_text": [
+        "Monday: 9:00 AM – 5:00 PM",
+        "Tuesday: 9:00 AM – 5:00 PM",
+        "Wednesday: 9:00 AM – 5:00 PM",
+        "Thursday: 9:00 AM – 5:00 PM",
+        "Friday: 9:00 AM – 10:00 PM",
+        "Saturday: 10:00 AM – 10:00 PM",
+        "Sunday: 10:00 AM – 4:00 PM"
+      ],
+      "website": "http://saigondripcafe.com/",
+      "phone": "(206) 280-1797",
+      "url": "https://maps.google.com/?cid=2683149111059440644",
+      "next_close_iso": "2026-05-03T05:00:00.000Z",
+      "business_status": "OPERATIONAL",
+      "utc_offset": -420
+    },
+    {
+      "name": "Berlin Döner Kebab",
+      "category": "food",
+      "google_maps_url": "https://maps.google.com/?q=The+Berliner+D%C3%B6ner+Kebab+Seattle",
+      "place_id": "ChIJG0hRgTcVkFQRbHwXSGys9wk",
+      "notes": "Döner wraps, late night, great downtown quick bite, $$",
+      "speed": "quick",
+      "price": "$$",
+      "address": "428 Westlake Ave N, Seattle, WA 98109, USA",
+      "lat": 47.6226649,
+      "lng": -122.3381333,
+      "open_now": false,
+      "weekday_text": [
+        "Monday: 11:00 AM – 8:00 PM",
+        "Tuesday: 11:00 AM – 8:00 PM",
+        "Wednesday: 11:00 AM – 8:00 PM",
+        "Thursday: 11:00 AM – 8:00 PM",
+        "Friday: 11:00 AM – 8:00 PM",
+        "Saturday: Closed",
+        "Sunday: Closed"
+      ],
+      "website": "https://www.toasttab.com/the-berliner-doner-kebab-428-westlake-ave-n?utm_source=google&utm_medium=organic&utm_campaign=gmb-oo-web",
+      "phone": "(206) 623-5425",
+      "url": "https://maps.google.com/?cid=718232246654827628",
+      "next_close_iso": "2026-05-05T03:00:00.000Z",
+      "business_status": "OPERATIONAL",
+      "utc_offset": -420
+    },
+    {
+      "name": "Marination Ma Kai",
+      "category": "dessert",
+      "google_maps_url": "https://maps.google.com/?q=Marination+Ma+Kai+Seattle",
+      "place_id": "ChIJsRF59nJAkFQRKis-uc-e_1k",
+      "notes": "Hawaiian Korean fusion, go for shave ice and Alki views, $$",
+      "speed": "normal",
+      "price": "$$",
+      "address": "1660 Harbor Ave SW, Seattle, WA 98126, USA",
+      "lat": 47.58943619999999,
+      "lng": -122.3805702,
+      "open_now": false,
+      "weekday_text": [
+        "Monday: 11:00 AM – 8:00 PM",
+        "Tuesday: 11:00 AM – 8:00 PM",
+        "Wednesday: 11:00 AM – 8:00 PM",
+        "Thursday: 11:00 AM – 8:00 PM",
+        "Friday: 11:00 AM – 9:00 PM",
+        "Saturday: 9:00 AM – 9:00 PM",
+        "Sunday: 9:00 AM – 8:00 PM"
+      ],
+      "website": "http://www.marinationmobile.com/",
+      "phone": "(206) 328-8226",
+      "url": "https://maps.google.com/?cid=6485076603440081706",
+      "next_close_iso": "2026-05-03T04:00:00.000Z",
+      "business_status": "OPERATIONAL",
+      "utc_offset": -420
+    },
+    {
+      "name": "Salt & Straw",
+      "category": "dessert",
+      "google_maps_url": "https://maps.google.com/?q=Salt+%26+Straw+Capitol+Hill+Seattle",
+      "place_id": "ChIJ__8DfstqkFQR_cgIxwcjzG8",
+      "notes": "Creative rotating ice cream flavors, Capitol Hill favorite, $$",
+      "speed": "quick",
+      "price": "$$",
+      "address": "714 E Pike St Suite A, Seattle, WA 98122, USA",
+      "lat": 47.6141937,
+      "lng": -122.3232668,
+      "open_now": false,
+      "weekday_text": [
+        "Monday: 11:00 AM – 11:00 PM",
+        "Tuesday: 11:00 AM – 11:00 PM",
+        "Wednesday: 11:00 AM – 11:00 PM",
+        "Thursday: 11:00 AM – 11:00 PM",
+        "Friday: 11:00 AM – 11:00 PM",
+        "Saturday: 11:00 AM – 11:00 PM",
+        "Sunday: 11:00 AM – 11:00 PM"
+      ],
+      "website": "https://www.saltandstraw.com/",
+      "phone": "(206) 258-4574",
+      "url": "https://maps.google.com/?cid=8055852349769959677",
+      "next_close_iso": "2026-05-03T06:00:00.000Z",
+      "business_status": "OPERATIONAL",
+      "utc_offset": -420
+    },
+    {
+      "name": "Nue",
+      "category": "food",
+      "google_maps_url": "https://maps.google.com/?q=Nue+Seattle",
+      "place_id": "ChIJz91V-s1qkFQRTaAOUkM_jKo",
+      "notes": "Global street food, rotating menu, Capitol Hill favorite, $$",
+      "speed": "normal",
+      "price": "$$",
+      "address": "1519 14th Ave, Seattle, WA 98122, USA",
+      "lat": 47.6147255,
+      "lng": -122.3144481,
+      "open_now": false,
+      "weekday_text": [
+        "Monday: 11:00 AM – 9:00 PM",
+        "Tuesday: 5:00 – 9:00 PM",
+        "Wednesday: 5:00 – 9:00 PM",
+        "Thursday: 5:00 – 9:00 PM",
+        "Friday: 11:00 AM – 10:00 PM",
+        "Saturday: 10:00 AM – 10:00 PM",
+        "Sunday: 10:00 AM – 9:00 PM"
+      ],
+      "website": "http://www.nueseattle.com/",
+      "phone": "(206) 257-0312",
+      "url": "https://maps.google.com/?cid=12289267041559289933",
+      "next_close_iso": "2026-05-03T05:00:00.000Z",
+      "business_status": "OPERATIONAL",
+      "utc_offset": -420
+    },
+    {
+      "name": "Oriental Express",
+      "category": "food",
+      "google_maps_url": "https://maps.google.com/?q=Oriental+Express+Seattle+4th+Ave",
+      "place_id": "ChIJG2b7-itAkFQRK1hrdZFG0Gc",
+      "notes": "SODO Chinese American classic, fast, nostalgic lunch spot, $",
+      "speed": "quick",
+      "price": "$",
+      "address": "2963 4th Ave S, Seattle, WA 98134, USA",
+      "lat": 47.5758303,
+      "lng": -122.3294821,
+      "open_now": false,
+      "weekday_text": [
+        "Monday: 10:30 AM – 11:00 PM",
+        "Tuesday: 10:30 AM – 11:00 PM",
+        "Wednesday: 10:30 AM – 11:00 PM",
+        "Thursday: 10:30 AM – 11:00 PM",
+        "Friday: 10:30 AM – 11:00 PM",
+        "Saturday: 11:00 AM – 11:00 PM",
+        "Sunday: 12:00 – 11:00 PM"
+      ],
+      "website": "http://www.seattleorientexpress.com/",
+      "phone": "(206) 682-0683",
+      "url": "https://maps.google.com/?cid=7480556571616565291",
+      "next_close_iso": "2026-05-03T06:00:00.000Z",
+      "business_status": "OPERATIONAL",
+      "utc_offset": -420
+    },
+    {
+      "name": "Ciudad",
+      "category": "food",
+      "google_maps_url": "https://maps.google.com/?q=Ciudad+Seattle+Georgetown",
+      "place_id": "ChIJSX5ykutBkFQRLOIOUAMsMKw",
+      "notes": "Seasonal Latin inspired food, stylish Georgetown dinner, $$",
+      "speed": "normal",
+      "price": "$$",
+      "address": "6118 12th Ave S, Seattle, WA 98108, USA",
+      "lat": 47.5482374,
+      "lng": -122.3170496,
+      "open_now": false,
+      "weekday_text": [
+        "Monday: 11:30 AM – 8:00 PM",
+        "Tuesday: 11:30 AM – 8:00 PM",
+        "Wednesday: 11:30 AM – 8:00 PM",
+        "Thursday: 11:30 AM – 8:00 PM",
+        "Friday: 11:30 AM – 9:00 PM",
+        "Saturday: 11:30 AM – 9:00 PM",
+        "Sunday: 11:30 AM – 8:00 PM"
+      ],
+      "website": "http://www.ciudadseattle.com/",
+      "phone": "(206) 717-2984",
+      "url": "https://maps.google.com/?cid=12407465366145393196",
+      "next_close_iso": "2026-05-03T04:00:00.000Z",
+      "business_status": "OPERATIONAL",
+      "utc_offset": -420
+    },
+    {
+      "name": "Maruta Shoten",
+      "category": "food",
+      "google_maps_url": "https://maps.google.com/?q=Maruta+Shoten+Seattle",
+      "place_id": "ChIJwRG8cOtBkFQRnK7hXlwAslc",
+      "notes": "Japanese grocery and deli, great bento and grab and go, $",
+      "speed": "quick",
+      "price": "$",
+      "address": "1024 S Bailey St, Seattle, WA 98108, USA",
+      "lat": 47.5478056,
+      "lng": -122.3190378,
+      "open_now": false,
+      "weekday_text": [
+        "Monday: 10:00 AM – 6:00 PM",
+        "Tuesday: 10:00 AM – 6:00 PM",
+        "Wednesday: 10:00 AM – 6:00 PM",
+        "Thursday: 10:00 AM – 6:00 PM",
+        "Friday: 10:00 AM – 6:00 PM",
+        "Saturday: 10:00 AM – 6:00 PM",
+        "Sunday: Closed"
+      ],
+      "website": "http://www.marutashoten.com/",
+      "phone": "(206) 767-5002",
+      "url": "https://maps.google.com/?cid=6319113623883067036",
+      "next_close_iso": "2026-05-03T01:00:00.000Z",
+      "business_status": "OPERATIONAL",
+      "utc_offset": -420
+    },
+    {
+      "name": "BopBox",
+      "category": "food",
+      "google_maps_url": "https://maps.google.com/?q=BopBox+Seattle+Georgetown",
+      "place_id": "ChIJs8ZwUtZBkFQRSXk4_xfx_bM",
+      "notes": "Korean rice bowls, fast and flavorful Georgetown lunch, $$",
+      "speed": "quick",
+      "price": "$$",
+      "address": "5633 Airport Wy S, Seattle, WA 98108, USA",
+      "lat": 47.5512951,
+      "lng": -122.3192022,
+      "open_now": false,
+      "weekday_text": [
+        "Monday: 11:00 AM – 3:00 PM, 4:00 – 8:00 PM",
+        "Tuesday: 11:00 AM – 3:00 PM, 4:00 – 8:00 PM",
+        "Wednesday: 11:00 AM – 3:00 PM, 4:00 – 8:00 PM",
+        "Thursday: 11:00 AM – 3:00 PM, 4:00 – 8:00 PM",
+        "Friday: 11:00 AM – 3:00 PM, 4:00 – 8:00 PM",
+        "Saturday: 11:00 AM – 3:00 PM, 4:00 – 8:00 PM",
+        "Sunday: Closed"
+      ],
+      "website": "https://order.toasttab.com/online/bopbox",
+      "phone": "(206) 257-4787",
+      "url": "https://maps.google.com/?cid=12969787587265329481",
+      "next_close_iso": "2026-05-02T22:00:00.000Z",
+      "business_status": "OPERATIONAL",
+      "utc_offset": -420
+    },
+    {
+      "name": "Bloom Bistro",
+      "category": "food",
+      "google_maps_url": "https://maps.google.com/?q=Bloom+Bistro+Seattle+Georgetown",
+      "place_id": "ChIJeaFFHABBkFQRK_igz4Ab74s",
+      "notes": "Bagels! Georgetown, $",
+      "speed": "quick",
+      "price": "$",
+      "address": "6601 Carleton Ave S, Seattle, WA 98108, USA",
+      "lat": 47.5441807,
+      "lng": -122.3213354,
+      "open_now": false,
+      "weekday_text": [
+        "Monday: Closed",
+        "Tuesday: 7:00 AM – 5:00 PM",
+        "Wednesday: 7:00 AM – 5:00 PM",
+        "Thursday: 7:00 AM – 5:00 PM",
+        "Friday: 7:00 AM – 5:00 PM",
+        "Saturday: 8:00 AM – 3:00 PM",
+        "Sunday: 8:00 AM – 3:00 PM"
+      ],
+      "website": "http://www.bloom-bistro.com/",
+      "phone": "(206) 518-7031",
+      "url": "https://maps.google.com/?cid=10083308330759026731",
+      "next_close_iso": "2026-05-02T22:00:00.000Z",
+      "business_status": "OPERATIONAL",
+      "utc_offset": -420
+    },
+    {
+      "name": "Voi Cà Phê",
+      "category": "dessert",
+      "google_maps_url": "https://maps.google.com/?q=Voi+Ca+Phe+Seattle+Georgetown",
+      "place_id": "ChIJpRTskdhBkFQR4rkqVbBNGWo",
+      "notes": "Vietnamese coffee and pastries, cozy cafe stop, $",
+      "speed": "quick",
+      "price": "$",
+      "address": "6105 13th Ave S, Seattle, WA 98108, USA",
+      "lat": 47.5484118,
+      "lng": -122.3162532,
+      "open_now": false,
+      "weekday_text": [
+        "Monday: 8:00 AM – 4:00 PM",
+        "Tuesday: 8:00 AM – 4:00 PM",
+        "Wednesday: 8:00 AM – 4:00 PM",
+        "Thursday: 8:00 AM – 4:00 PM",
+        "Friday: 8:00 AM – 4:00 PM",
+        "Saturday: 8:00 AM – 4:00 PM",
+        "Sunday: Closed"
+      ],
+      "website": "http://voicaphe.com/",
+      "phone": null,
+      "url": "https://maps.google.com/?cid=7645227262176573922",
+      "next_close_iso": "2026-05-02T23:00:00.000Z",
+      "business_status": "OPERATIONAL",
+      "utc_offset": -420
+    },
+    {
+      "name": "Momiji",
+      "category": "food",
+      "google_maps_url": "https://maps.google.com/?q=Momiji+Seattle+Capitol+Hill",
+      "place_id": "ChIJO4mDgc5qkFQRP-iajZvSwZU",
+      "notes": "Sushi and Japanese, beautiful space, reliable dinner, $$",
+      "speed": "normal",
+      "price": "$$",
+      "address": "1522 12th Ave, Seattle, WA 98122, USA",
+      "lat": 47.6147972,
+      "lng": -122.3164889,
+      "open_now": false,
+      "weekday_text": [
+        "Monday: 4:00 – 11:00 PM",
+        "Tuesday: 4:00 – 11:00 PM",
+        "Wednesday: 4:00 – 11:00 PM",
+        "Thursday: 4:00 – 11:00 PM",
+        "Friday: 4:00 PM – 12:00 AM",
+        "Saturday: 4:00 PM – 12:00 AM",
+        "Sunday: 4:00 – 11:00 PM"
+      ],
+      "website": "http://momijiseattle.com/",
+      "phone": "(206) 457-4068",
+      "url": "https://maps.google.com/?cid=10791137747693922367",
+      "next_close_iso": "2026-05-03T07:00:00.000Z",
+      "business_status": "OPERATIONAL",
+      "utc_offset": -420
+    },
+    {
+      "name": "Molly Moon's Homemade Ice Cream",
+      "category": "dessert",
+      "google_maps_url": "https://maps.google.com/?q=Molly+Moon%27s+Homemade+Ice+Cream+West+Seattle",
+      "place_id": "ChIJU_rb-cxqkFQRFLqim07vnLE",
+      "notes": "Classic Seattle ice cream, Alaska Junction, $$",
+      "speed": "quick",
+      "price": "$$",
+      "address": "917 E Pine St, Seattle, WA 98122, USA",
+      "lat": 47.61511100000001,
+      "lng": -122.31977,
+      "open_now": false,
+      "weekday_text": [
+        "Monday: 12:00 – 11:00 PM",
+        "Tuesday: 12:00 – 11:00 PM",
+        "Wednesday: 12:00 – 11:00 PM",
+        "Thursday: 12:00 – 11:00 PM",
+        "Friday: 12:00 – 11:00 PM",
+        "Saturday: 12:00 – 11:00 PM",
+        "Sunday: 12:00 – 11:00 PM"
+      ],
+      "website": "https://www.mollymoon.com/locations/capitol-hill",
+      "phone": "(206) 294-4389",
+      "url": "https://maps.google.com/?cid=12798367361977727508",
+      "next_close_iso": "2026-05-03T06:00:00.000Z",
+      "business_status": "OPERATIONAL",
+      "utc_offset": -420
+    },
+    {
+      "name": "Bakery Nouveau",
+      "category": "dessert",
+      "google_maps_url": "https://maps.google.com/?q=Bakery+Nouveau+West+Seattle",
+      "place_id": "ChIJ--L6NtNqkFQR28XtOJxSxL4",
+      "notes": "Award winning pastries, chocolate croissant dessert stop, $$",
+      "speed": "quick",
+      "price": "$$",
+      "address": "137 15th Ave E, Seattle, WA 98112, USA",
+      "lat": 47.619506,
+      "lng": -122.312902,
+      "open_now": false,
+      "weekday_text": [
+        "Monday: Closed",
+        "Tuesday: Closed",
+        "Wednesday: 7:00 AM – 5:00 PM",
+        "Thursday: 7:00 AM – 5:00 PM",
+        "Friday: 7:00 AM – 5:00 PM",
+        "Saturday: 7:00 AM – 5:00 PM",
+        "Sunday: 7:00 AM – 5:00 PM"
+      ],
+      "website": "http://www.bakerynouveau.com/",
+      "phone": "(206) 858-6957",
+      "url": "https://maps.google.com/?cid=13746202793565079003",
+      "next_close_iso": "2026-05-03T00:00:00.000Z",
+      "business_status": "OPERATIONAL",
+      "utc_offset": -420
+    },
+    {
+      "name": "Taquitos Feliz",
+      "category": "food",
+      "google_maps_url": "https://maps.google.com/?q=Taquitos+Feliz+Seattle+Fauntleroy",
+      "place_id": "ChIJW1MlaTxBkFQRUUSRs9BMGEU",
+      "notes": "Taco truck by Lincoln Park, fast and hits every time, $$",
+      "speed": "quick",
+      "price": "$",
+      "address": "7413 Fauntleroy Wy SW, Seattle, WA 98136, USA",
+      "lat": 47.5366162,
+      "lng": -122.3924234,
+      "open_now": false,
+      "weekday_text": [
+        "Monday: 10:00 AM – 10:00 PM",
+        "Tuesday: 10:00 AM – 10:00 PM",
+        "Wednesday: 10:00 AM – 10:00 PM",
+        "Thursday: 10:00 AM – 10:00 PM",
+        "Friday: 10:00 AM – 10:00 PM",
+        "Saturday: 10:00 AM – 10:00 PM",
+        "Sunday: 10:00 AM – 9:00 PM"
+      ],
+      "website": "http://ordertaquitosfeliz.com/",
+      "phone": "(206) 353-4046",
+      "url": "https://maps.google.com/?cid=4978813847307633745",
+      "next_close_iso": "2026-05-03T05:00:00.000Z",
+      "business_status": "OPERATIONAL",
+      "utc_offset": -420
+    },
+    {
+      "name": "Taqueria La Fondita",
+      "category": "food",
+      "google_maps_url": "https://maps.google.com/?q=Taqueria+La+Fondita+White+Center",
+      "place_id": "ChIJmQnIbLgVkFQRt41nWu-Pe8o",
+      "notes": "White Center truck, excellent street tacos, $",
+      "speed": "quick",
+      "price": "$",
+      "address": "8953 Aurora Ave N, Seattle, WA 98103, USA",
+      "lat": 47.6940017,
+      "lng": -122.3450245,
+      "open_now": false,
+      "weekday_text": [
+        "Monday: 10:00 AM – 10:00 PM",
+        "Tuesday: 10:00 AM – 10:00 PM",
+        "Wednesday: 10:00 AM – 10:00 PM",
+        "Thursday: 10:00 AM – 10:00 PM",
+        "Friday: 10:00 AM – 10:00 PM",
+        "Saturday: 10:00 AM – 10:00 PM",
+        "Sunday: 10:00 AM – 10:00 PM"
+      ],
+      "website": null,
+      "phone": "(206) 468-6594",
+      "url": "https://maps.google.com/?cid=14590413675973545399",
+      "next_close_iso": "2026-05-03T05:00:00.000Z",
+      "business_status": "OPERATIONAL",
+      "utc_offset": -420
+    },
+    {
+      "name": "Jack's BBQ",
+      "category": "food",
+      "google_maps_url": "https://maps.google.com/?q=Jack%27s+BBQ+SODO+Seattle",
+      "place_id": "ChIJK7Kn5dNBkFQRtOOq9805D5Q",
+      "notes": "Texas style BBQ in SODO, brisket and sides, $$",
+      "speed": "quick",
+      "price": "$$",
+      "address": "3924 Airport Wy S, Seattle, WA 98108, USA",
+      "lat": 47.5682792,
+      "lng": -122.3223369,
+      "open_now": false,
+      "weekday_text": [
+        "Monday: 7:00 – 10:00 AM, 11:00 AM – 8:00 PM",
+        "Tuesday: 7:00 – 10:00 AM, 11:00 AM – 8:00 PM",
+        "Wednesday: 7:00 – 10:00 AM, 11:00 AM – 8:00 PM",
+        "Thursday: 7:00 – 10:00 AM, 11:00 AM – 8:00 PM",
+        "Friday: 7:00 – 10:00 AM, 11:00 AM – 9:00 PM",
+        "Saturday: 10:00 AM – 9:00 PM",
+        "Sunday: 10:00 AM – 8:00 PM"
+      ],
+      "website": "http://jacksbbq.com/",
+      "phone": "(206) 467-4038",
+      "url": "https://maps.google.com/?cid=10668809599050245044",
+      "next_close_iso": "2026-05-03T04:00:00.000Z",
+      "business_status": "OPERATIONAL",
+      "utc_offset": -420
+    },
+    {
+      "name": "Hong Kong Market",
+      "category": "food",
+      "google_maps_url": "https://maps.google.com/?q=Hong+Kong+Market+Burien",
+      "place_id": "ChIJHSrU5uNDkFQRLxG_dx4niCk",
+      "notes": "Asian grocery with hot food counter, great cheap meals, $",
+      "speed": "quick",
+      "price": "$",
+      "address": "125 SW 148th St B, Burien, WA 98166, USA",
+      "lat": 47.4698339,
+      "lng": -122.3359436,
+      "open_now": false,
+      "weekday_text": [
+        "Monday: 8:00 AM – 8:00 PM",
+        "Tuesday: 8:00 AM – 8:00 PM",
+        "Wednesday: 8:00 AM – 8:00 PM",
+        "Thursday: 8:00 AM – 8:00 PM",
+        "Friday: 8:00 AM – 8:00 PM",
+        "Saturday: 8:00 AM – 8:00 PM",
+        "Sunday: 8:00 AM – 8:00 PM"
+      ],
+      "website": "https://www.hkmstores.com/",
+      "phone": "(206) 420-3239",
+      "url": "https://maps.google.com/?cid=2992684964199207215",
+      "next_close_iso": "2026-05-03T03:00:00.000Z",
+      "business_status": "OPERATIONAL",
+      "utc_offset": -420
+    },
+    {
+      "name": "Tat's Delicatessen",
+      "category": "food",
+      "google_maps_url": "https://maps.google.com/?q=Tat%27s+Delicatessen+Seattle",
+      "place_id": "ChIJBVc-lbpqkFQRaoKWP0nxwnE",
+      "notes": "Elite cheesesteaks and sandwiches, fast and satisfying, $$",
+      "speed": "quick",
+      "price": "$$",
+      "address": "159 Yesler Wy, Seattle, WA 98104, USA",
+      "lat": 47.6015936,
+      "lng": -122.3323265,
+      "open_now": false,
+      "weekday_text": [
+        "Monday: 9:00 AM – 2:30 PM",
+        "Tuesday: 9:00 AM – 2:30 PM",
+        "Wednesday: 9:00 AM – 2:30 PM",
+        "Thursday: 9:00 AM – 2:30 PM",
+        "Friday: 9:00 AM – 2:30 PM",
+        "Saturday: 11:00 AM – 5:30 PM",
+        "Sunday: Closed"
+      ],
+      "website": "http://www.tatsdeli.com/",
+      "phone": "(206) 264-8287",
+      "url": "https://maps.google.com/?cid=8197379568669459050",
+      "next_close_iso": "2026-05-03T00:30:00.000Z",
+      "business_status": "OPERATIONAL",
+      "utc_offset": -420
+    },
+    {
+      "name": "Paseo",
+      "category": "food",
+      "google_maps_url": "https://maps.google.com/?q=Paseo+Seattle+SODO",
+      "place_id": "ChIJI9abTFMUkFQRjkoqvmG4eWY",
+      "notes": "Legendary Caribbean sandwiches, huge portions, $$",
+      "speed": "quick",
+      "price": "$$",
+      "address": "4225 Fremont Ave N, Seattle, WA 98103, USA",
+      "lat": 47.658486,
+      "lng": -122.350311,
+      "open_now": false,
+      "weekday_text": [
+        "Monday: 11:00 AM – 6:00 PM",
+        "Tuesday: 11:00 AM – 9:00 PM",
+        "Wednesday: 11:00 AM – 9:00 PM",
+        "Thursday: 11:00 AM – 9:00 PM",
+        "Friday: 11:00 AM – 9:00 PM",
+        "Saturday: 11:00 AM – 7:00 PM",
+        "Sunday: 11:00 AM – 6:00 PM"
+      ],
+      "website": "http://www.paseo.com/",
+      "phone": "(206) 545-7440",
+      "url": "https://maps.google.com/?cid=7384135793992419982",
+      "next_close_iso": "2026-05-03T02:00:00.000Z",
+      "business_status": "OPERATIONAL",
+      "utc_offset": -420
+    },
+    {
+      "name": "Fuji Bakery",
+      "category": "dessert",
+      "google_maps_url": "https://maps.google.com/?q=Fuji+Bakery+Seattle",
+      "place_id": "ChIJpxPXFmYVkFQRuKwPGwj33Ek",
+      "notes": "Japanese pastries and desserts, light and not too sweet, $$",
+      "speed": "quick",
+      "price": "$$",
+      "address": "1030 Elliott Ave W, Seattle, WA 98119, USA",
+      "lat": 47.628317,
+      "lng": -122.3702293,
+      "open_now": false,
+      "weekday_text": [
+        "Monday: 7:00 AM – 5:00 PM",
+        "Tuesday: 7:00 AM – 5:00 PM",
+        "Wednesday: 7:00 AM – 5:00 PM",
+        "Thursday: 7:00 AM – 5:00 PM",
+        "Friday: 7:00 AM – 5:00 PM",
+        "Saturday: 7:00 AM – 5:00 PM",
+        "Sunday: 7:00 AM – 4:00 PM"
+      ],
+      "website": "http://www.fujibakeryinc.com/",
+      "phone": "(206) 216-3616",
+      "url": "https://maps.google.com/?cid=5322400473830894776",
+      "next_close_iso": "2026-05-03T00:00:00.000Z",
+      "business_status": "OPERATIONAL",
+      "utc_offset": -420
+    },
+    {
+      "name": "Meet Fresh",
+      "category": "dessert",
+      "google_maps_url": "https://maps.google.com/?q=Meet+Fresh+Bellevue",
+      "place_id": "ChIJ1dbEu19rkFQRhqWYXCeJnx0",
+      "notes": "Taiwanese desserts, taro balls and shaved ice, $$",
+      "speed": "quick",
+      "price": "$$",
+      "address": "223 5th Ave S, Seattle, WA 98104, USA",
+      "lat": 47.6002533,
+      "lng": -122.3278335,
+      "open_now": null,
+      "weekday_text": [],
+      "website": "https://meetfresh.us/",
+      "phone": "(206) 538-0048",
+      "url": "https://maps.google.com/?cid=2134575550547142022",
+      "next_close_iso": null,
+      "business_status": "CLOSED_PERMANENTLY",
+      "utc_offset": -420
+    },
+    {
+      "name": "Taurus Ox",
+      "category": "food",
+      "google_maps_url": "https://maps.google.com/?q=Taurus+Ox+Seattle",
+      "place_id": "ChIJfwLg_H9rkFQRb_tvz1CMlR4",
+      "notes": "Lao food, bold flavors, excellent noodles and sausage, $$$",
+      "speed": "normal",
+      "price": "$$$",
+      "address": "903 19th Ave E, Seattle, WA 98112, USA",
+      "lat": 47.6271066,
+      "lng": -122.3076325,
+      "open_now": false,
+      "weekday_text": [
+        "Monday: Closed",
+        "Tuesday: 11:00 AM – 2:00 PM, 5:00 – 9:00 PM",
+        "Wednesday: 11:00 AM – 2:00 PM, 5:00 – 9:00 PM",
+        "Thursday: 11:00 AM – 2:00 PM, 5:00 – 9:00 PM",
+        "Friday: 11:00 AM – 2:00 PM, 5:00 – 9:00 PM",
+        "Saturday: 11:00 AM – 2:00 PM, 5:00 – 9:00 PM",
+        "Sunday: Closed"
+      ],
+      "website": "http://taurusox.com/",
+      "phone": "(206) 972-0075",
+      "url": "https://maps.google.com/?cid=2203821871373220719",
+      "next_close_iso": "2026-05-02T21:00:00.000Z",
+      "business_status": "OPERATIONAL",
+      "utc_offset": -420
+    },
+    {
+      "name": "Meesha Mayne",
+      "category": "food",
+      "google_maps_url": "https://maps.google.com/?q=Meesha+Mayne+Seattle",
+      "place_id": "ChIJjbcbPPoVkFQRLfLrF8RwJXQ",
+      "notes": "Creative Indian inspired dishes, great date night, $$$",
+      "speed": "normal",
+      "price": "$$$",
+      "address": "127 N 36th St, Seattle, WA 98103, USA",
+      "lat": 47.65249319999999,
+      "lng": -122.3564988,
+      "open_now": false,
+      "weekday_text": [
+        "Monday: 4:00 – 9:00 PM",
+        "Tuesday: Closed",
+        "Wednesday: 4:00 – 9:00 PM",
+        "Thursday: 4:00 – 9:00 PM",
+        "Friday: 4:00 – 10:00 PM",
+        "Saturday: 4:00 – 10:00 PM",
+        "Sunday: 4:00 – 9:00 PM"
+      ],
+      "website": "https://www.meeshaforyou.com/",
+      "phone": "(206) 632-0135",
+      "url": "https://maps.google.com/?cid=8369219470055174701",
+      "next_close_iso": "2026-05-03T05:00:00.000Z",
+      "business_status": "OPERATIONAL",
+      "utc_offset": -420
+    },
+    {
+      "name": "Damn the Weather",
+      "category": "food",
+      "google_maps_url": "https://maps.google.com/?q=Damn+the+Weather+Seattle",
+      "place_id": "ChIJUfxntbpqkFQRxoN_1GvKcTU",
+      "notes": "Cocktail bar you go to for food, great small plates, $$",
+      "speed": "normal",
+      "price": "$$",
+      "address": "116 1st Ave S, Seattle, WA 98104, USA",
+      "lat": 47.601122,
+      "lng": -122.333951,
+      "open_now": false,
+      "weekday_text": [
+        "Monday: 11:00 AM – 10:00 PM",
+        "Tuesday: 11:00 AM – 10:00 PM",
+        "Wednesday: 11:00 AM – 10:00 PM",
+        "Thursday: 11:00 AM – 10:00 PM",
+        "Friday: 11:00 AM – 11:00 PM",
+        "Saturday: 11:00 AM – 11:00 PM",
+        "Sunday: 11:00 AM – 9:00 PM"
+      ],
+      "website": "http://www.damntheweather.com/",
+      "phone": "(206) 946-1283",
+      "url": "https://maps.google.com/?cid=3851081720853922758",
+      "next_close_iso": "2026-05-03T06:00:00.000Z",
+      "business_status": "OPERATIONAL",
+      "utc_offset": -420
+    },
+    {
+      "name": "The Corson Building",
+      "category": "food",
+      "google_maps_url": "https://maps.google.com/?q=The+Corson+Building+Seattle",
+      "place_id": "ChIJaWyj4sFBkFQRrErYj12yNKA",
+      "notes": "Special occasion dinner, seasonal and intimate, $$",
+      "speed": "slow",
+      "price": "$$",
+      "address": "5609 Corson Ave S, Seattle, WA 98108, USA",
+      "lat": 47.5519585,
+      "lng": -122.3203615,
+      "open_now": false,
+      "weekday_text": [
+        "Monday: Closed",
+        "Tuesday: Closed",
+        "Wednesday: Closed",
+        "Thursday: 6:00 – 9:30 PM",
+        "Friday: 6:00 – 9:30 PM",
+        "Saturday: 5:30 – 9:30 PM",
+        "Sunday: 5:30 – 9:00 PM"
+      ],
+      "website": "http://thecorsonbuilding.com/",
+      "phone": "(206) 762-3330",
+      "url": "https://maps.google.com/?cid=11544047859772443308",
+      "next_close_iso": "2026-05-03T04:30:00.000Z",
+      "business_status": "OPERATIONAL",
+      "utc_offset": -420
+    },
+    {
+      "name": "Terra Plata",
+      "category": "food",
+      "google_maps_url": "https://maps.google.com/?q=Terra+Plata+Seattle",
+      "place_id": "ChIJl5bQVy8UkFQRYrkP5JjaAec",
+      "notes": "Rooftop vibe, Mediterranean leaning, strong date night, $$",
+      "speed": "normal",
+      "price": "$$",
+      "address": "1501 Melrose Ave, Seattle, WA 98122, USA",
+      "lat": 47.6143982,
+      "lng": -122.3280831,
+      "open_now": false,
+      "weekday_text": [
+        "Monday: 4:00 – 10:00 PM",
+        "Tuesday: 4:00 – 10:00 PM",
+        "Wednesday: 4:00 – 10:00 PM",
+        "Thursday: 4:00 – 10:00 PM",
+        "Friday: 4:00 – 10:00 PM",
+        "Saturday: 9:30 AM – 10:00 PM",
+        "Sunday: 9:30 AM – 9:00 PM"
+      ],
+      "website": "http://terraplata.com/",
+      "phone": "(206) 325-1501",
+      "url": "https://maps.google.com/?cid=16645826047934183778",
+      "next_close_iso": "2026-05-03T05:00:00.000Z",
+      "business_status": "OPERATIONAL",
+      "utc_offset": -420
+    },
+    {
+      "name": "Violet",
+      "category": "food",
+      "google_maps_url": "https://maps.google.com/?q=Violet+Seattle",
+      "place_id": "ChIJmy8oI71rkFQRgQCROPXxbv0",
+      "notes": "Cozy neighborhood spot, thoughtful menu and good drinks, $$$",
+      "speed": "normal",
+      "price": "$$$",
+      "address": "1734 12th Ave, Seattle, WA 98122, USA",
+      "lat": 47.6173159,
+      "lng": -122.3166259,
+      "open_now": false,
+      "weekday_text": [
+        "Monday: Closed",
+        "Tuesday: 5:00 – 10:00 PM",
+        "Wednesday: 5:00 – 10:00 PM",
+        "Thursday: 5:00 – 10:00 PM",
+        "Friday: 5:00 – 10:00 PM",
+        "Saturday: 5:00 – 10:00 PM",
+        "Sunday: 5:00 – 10:00 PM"
+      ],
+      "website": "https://www.violetseattle.com/",
+      "phone": "(206) 695-2588",
+      "url": "https://maps.google.com/?cid=18261799574552248449",
+      "next_close_iso": "2026-05-03T05:00:00.000Z",
+      "business_status": "OPERATIONAL",
+      "utc_offset": -420
+    },
+    {
+      "name": "Hamdi",
+      "category": "food",
+      "google_maps_url": "https://maps.google.com/?q=Hamdi+Seattle+Georgetown",
+      "place_id": "ChIJMwrndPEVkFQRlXfGXp7QSys",
+      "notes": "Modern Turkish, excellent Georgetown date night, $$$",
+      "speed": "normal",
+      "price": "$$$",
+      "address": "4012 NW Leary Wy, Seattle, WA 98107, USA",
+      "lat": 47.6565406,
+      "lng": -122.3620072,
+      "open_now": false,
+      "weekday_text": [
+        "Monday: Closed",
+        "Tuesday: Closed",
+        "Wednesday: Closed",
+        "Thursday: 5:00 – 9:00 PM",
+        "Friday: 5:00 – 10:00 PM",
+        "Saturday: 5:00 – 10:00 PM",
+        "Sunday: 5:00 – 9:00 PM"
+      ],
+      "website": "http://www.hamdiseattle.com/",
+      "phone": "(206) 561-6953",
+      "url": "https://maps.google.com/?cid=3119816545497675669",
+      "next_close_iso": "2026-05-03T05:00:00.000Z",
+      "business_status": "OPERATIONAL",
+      "utc_offset": -420
+    },
+    {
+      "name": "Ivar's Acres of Clams",
+      "category": "food",
+      "google_maps_url": "https://maps.google.com/?q=Ivar%27s+Acres+of+Clams+Seattle",
+      "place_id": "ChIJh8xzLa5qkFQRc-VyM5h5uuU",
+      "notes": "Classic Seattle seafood on the water, chowder and views, $$",
+      "speed": "normal",
+      "price": "$$",
+      "address": "1001 Alaskan Wy Ste. 102, Seattle, WA 98104, USA",
+      "lat": 47.6040335,
+      "lng": -122.3395662,
+      "open_now": false,
+      "weekday_text": [
+        "Monday: 11:00 AM – 8:00 PM",
+        "Tuesday: 11:00 AM – 8:00 PM",
+        "Wednesday: 11:00 AM – 8:00 PM",
+        "Thursday: 11:00 AM – 8:00 PM",
+        "Friday: 11:00 AM – 8:00 PM",
+        "Saturday: 11:00 AM – 8:00 PM",
+        "Sunday: 11:00 AM – 8:00 PM"
+      ],
+      "website": "https://www.ivars.com/acres",
+      "phone": "(206) 624-6852",
+      "url": "https://maps.google.com/?cid=16553677074958837107",
+      "next_close_iso": "2026-05-03T03:00:00.000Z",
+      "business_status": "OPERATIONAL",
+      "utc_offset": -420
+    },
+    {
+      "name": "West Seattle Farmers Market",
+      "category": "food",
+      "google_maps_url": "https://maps.google.com/?q=West+Seattle+Farmers+Market",
+      "place_id": "ChIJe_82KfpAkFQRaQpl05JYTs4",
+      "notes": "Farmers market Sundays, great food vendors and seasonal options, $",
+      "speed": "quick",
+      "price": "$",
+      "address": "Cnr SW Alaska St &, California Ave SW, Seattle, WA 98116, USA",
+      "lat": 47.5619125,
+      "lng": -122.3867874,
+      "open_now": false,
+      "weekday_text": [
+        "Monday: Closed",
+        "Tuesday: Closed",
+        "Wednesday: Closed",
+        "Thursday: Closed",
+        "Friday: Closed",
+        "Saturday: Closed",
+        "Sunday: 10:00 AM – 2:00 PM"
+      ],
+      "website": "https://seattlefarmersmarkets.org/wsfm",
+      "phone": "(206) 632-5234",
+      "url": "https://maps.google.com/?cid=14865916807631669865",
+      "next_close_iso": "2026-05-03T21:00:00.000Z",
+      "business_status": "OPERATIONAL",
+      "utc_offset": -420
     }
-    * { box-sizing:border-box; }
-    html { scroll-behavior:smooth; }
-    body { margin:0; font-family:Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color:var(--ink); background:
-      radial-gradient(circle at 8% 0%, rgba(167,38,82,.32), transparent 26rem),
-      radial-gradient(circle at 90% 10%, rgba(243,217,144,.28), transparent 24rem),
-      radial-gradient(circle at 70% 80%, rgba(111,23,56,.16), transparent 28rem),
-      linear-gradient(135deg, #1a1020 0%, #f5e8ed 38%, #fff8ef 100%); min-height:100vh; }
-    body::before { content:""; position:fixed; inset:0; pointer-events:none; opacity:.22; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)' opacity='.22'/%3E%3C/svg%3E"); mix-blend-mode:multiply; }
-    a { color:inherit; }
-    button, input, select { font:inherit; }
-    button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible { outline:3px solid var(--focus); outline-offset:3px; }
-    .shell { width:min(1180px, calc(100% - 32px)); margin:0 auto; padding:28px 0 64px; position:relative; }
-    .topbar { position:sticky; top:14px; z-index:20; display:flex; align-items:center; justify-content:space-between; gap:16px; padding:12px; margin-bottom:28px; border:1px solid rgba(255,255,255,.62); border-radius:999px; background:rgba(255,250,253,.68); backdrop-filter:blur(20px); box-shadow:0 14px 36px rgba(24,10,24,.13); }
-    .brand { display:flex; align-items:center; gap:10px; padding-left:8px; font-weight:850; letter-spacing:.02em; }
-    .brandmark { width:34px; height:34px; border-radius:50%; background:conic-gradient(from 210deg, var(--wine), var(--rose), var(--champagne), var(--midnight), var(--wine)); box-shadow:inset 0 0 0 5px rgba(255,255,255,.46), 0 0 30px rgba(167,38,82,.24); }
-    .nav { display:flex; gap:8px; flex-wrap:wrap; justify-content:flex-end; }
-    .nav a, .ghost-btn { border:1px solid var(--line); background:rgba(255,255,255,.54); border-radius:999px; padding:10px 14px; text-decoration:none; font-size:.92rem; color:var(--plum); cursor:pointer; }
-    .nav a:hover, .ghost-btn:hover { background:#fff; transform:translateY(-1px); }
-    .hero { display:grid; grid-template-columns:1.05fr .95fr; gap:24px; align-items:stretch; margin-bottom:30px; }
-    .hero-card { border-radius:42px; padding:46px; background:
-      radial-gradient(circle at 75% 10%, rgba(243,217,144,.22), transparent 22rem),
-      radial-gradient(circle at 10% 90%, rgba(167,38,82,.34), transparent 22rem),
-      linear-gradient(140deg, rgba(16,11,24,.98), rgba(48,18,52,.96)); color:var(--cream); box-shadow:var(--shadow); position:relative; overflow:hidden; min-height:420px; }
-    .hero-card::after { content:""; position:absolute; width:460px; height:460px; right:-170px; top:-135px; border-radius:50%; background:radial-gradient(circle, rgba(233,167,183,.42), transparent 65%); filter:blur(1px); }
-    .hero-card::before { content:""; position:absolute; inset:18px; border:1px solid rgba(255,255,255,.13); border-radius:32px; pointer-events:none; }
-    .eyebrow { text-transform:uppercase; letter-spacing:.18em; font-size:.78rem; color:#f3d990; margin:0 0 18px; font-weight:850; }
-    h1 { font-family:Georgia, 'Times New Roman', serif; font-size:clamp(3.2rem, 7vw, 6.8rem); line-height:.86; letter-spacing:-.07em; margin:0 0 22px; max-width:760px; position:relative; z-index:1; }
-    .hero-card p { font-size:1.14rem; line-height:1.65; color:rgba(255,248,239,.86); max-width:640px; position:relative; z-index:1; }
-    .hero-actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:28px; position:relative; z-index:1; }
-    .primary-btn { border:0; background:linear-gradient(135deg, #ffe8a8, #e9a7b7 45%, #a72652); color:#170d16; border-radius:999px; padding:13px 18px; font-weight:900; cursor:pointer; box-shadow:0 16px 32px rgba(0,0,0,.26); }
-    .secondary-btn { border:1px solid rgba(255,255,255,.28); background:rgba(255,255,255,.1); color:var(--cream); border-radius:999px; padding:13px 18px; font-weight:780; cursor:pointer; }
-    .primary-btn:hover, .secondary-btn:hover { transform:translateY(-2px); }
-    .spotlight { display:grid; gap:18px; }
-    .panel { border:1px solid rgba(255,255,255,.72); background:var(--glass); backdrop-filter:blur(20px); border-radius:var(--radius); box-shadow:var(--shadow2); padding:22px; }
-    .clock { display:flex; justify-content:space-between; gap:16px; align-items:flex-start; }
-    .clock strong { font-family:Georgia, serif; font-size:2.4rem; letter-spacing:-.04em; display:block; }
-    .clock span { color:var(--muted); }
-    .picker-card { min-height:250px; display:flex; flex-direction:column; justify-content:space-between; position:relative; overflow:hidden; }
-    .picker-card::after { content:""; position:absolute; right:-80px; bottom:-110px; width:230px; height:230px; border-radius:50%; background:rgba(167,38,82,.16); }
-    .pick-title { font-family:Georgia, serif; font-size:2rem; line-height:1; margin:0 0 10px; }
-    .pick-meta { color:var(--muted); line-height:1.55; }
-    .micro-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
-    .micro { padding:16px; border-radius:22px; background:rgba(255,255,255,.58); border:1px solid var(--line); }
-    .micro b { display:block; font-family:Georgia, serif; font-size:1.65rem; }
-    .micro span { color:var(--muted); font-size:.86rem; }
-    .controls { margin:26px 0 24px; display:grid; grid-template-columns:1.2fr repeat(4, minmax(130px, .45fr)); gap:12px; align-items:end; }
-    .control { display:grid; gap:7px; }
-    label { font-size:.78rem; text-transform:uppercase; letter-spacing:.12em; color:var(--muted); font-weight:850; }
-    input, select { width:100%; border:1px solid var(--line); background:rgba(255,255,255,.8); border-radius:18px; padding:14px 14px; color:var(--ink); box-shadow:0 8px 24px rgba(24,10,24,.05); }
-    .section-head { display:flex; justify-content:space-between; gap:16px; align-items:end; margin:34px 0 16px; }
-    h2 { font-family:Georgia, serif; font-size:clamp(2rem, 4vw, 3.7rem); margin:0; letter-spacing:-.05em; }
-    .hint { color:var(--muted); line-height:1.55; max-width:560px; }
-    .grid { display:grid; grid-template-columns:repeat(3, minmax(0, 1fr)); gap:18px; }
-    .card { position:relative; display:flex; flex-direction:column; min-height:365px; padding:22px; border-radius:30px; background:rgba(255,250,253,.78); border:1px solid rgba(255,255,255,.72); box-shadow:0 18px 46px rgba(24,10,24,.11); overflow:hidden; transition:transform .2s ease, box-shadow .2s ease; }
-    .card:hover { transform:translateY(-5px); box-shadow:0 28px 64px rgba(24,10,24,.18); }
-    .card::before { content:""; position:absolute; inset:0 0 auto 0; height:7px; background:linear-gradient(90deg, var(--wine), var(--rose), var(--champagne)); opacity:.92; }
-    .card.closed-permanent { opacity:.64; filter:saturate(.72); }
-    .card-head { display:flex; justify-content:space-between; gap:14px; align-items:flex-start; margin-top:6px; }
-    h3 { font-family:Georgia, serif; font-size:1.8rem; line-height:1.02; letter-spacing:-.045em; margin:0 0 8px; }
-    .heart { flex:none; border:1px solid var(--line); background:rgba(255,255,255,.7); border-radius:50%; width:44px; height:44px; cursor:pointer; font-size:1.15rem; }
-    .heart.active { background:linear-gradient(135deg, var(--wine), var(--midnight)); color:#fff8ef; }
-    .chips { display:flex; flex-wrap:wrap; gap:8px; margin:10px 0 16px; }
-    .chip { display:inline-flex; align-items:center; gap:6px; border:1px solid var(--line); border-radius:999px; padding:7px 10px; font-size:.8rem; color:var(--plum); background:rgba(255,255,255,.58); font-weight:760; }
-    .chip.status { background:#f8e9ef; }
-    .chip.status.open { background:#eef5e7; color:#2f442c; }
-    .chip.status.closed { background:#f8e9ef; color:#771d3a; }
-    .chip.status.bad { background:#eee; color:#5b5350; }
-    .notes { color:#4a3e4a; line-height:1.55; margin:0 0 18px; }
-    .address { color:var(--muted); font-size:.92rem; line-height:1.4; margin:auto 0 14px; }
-    .today { border-radius:20px; background:linear-gradient(135deg, rgba(255,255,255,.68), rgba(255,248,239,.76)); border:1px solid var(--line); padding:13px; margin:0 0 14px; }
-    .today small { display:block; text-transform:uppercase; letter-spacing:.12em; color:var(--muted); font-weight:850; font-size:.72rem; margin-bottom:4px; }
-    .today b { font-size:.98rem; }
-    details { border-top:1px solid var(--line); padding-top:12px; margin-top:2px; }
-    summary { cursor:pointer; font-weight:850; color:var(--wine); }
-    .hours-list { margin:12px 0 0; padding:0; list-style:none; display:grid; gap:7px; color:var(--muted); font-size:.9rem; }
-    .hours-list li.today-line { color:var(--ink); font-weight:850; }
-    .card-actions { display:flex; flex-wrap:wrap; gap:9px; margin-top:16px; }
-    .card-actions a { text-decoration:none; border-radius:999px; padding:10px 12px; border:1px solid var(--line); background:rgba(255,255,255,.66); font-weight:850; font-size:.88rem; }
-    .empty { display:none; grid-column:1/-1; text-align:center; padding:60px 22px; border-radius:30px; border:1px dashed var(--line); background:rgba(255,255,255,.5); color:var(--muted); }
-    @media (max-width:980px) { .hero, .grid { grid-template-columns:1fr; } .controls { grid-template-columns:1fr 1fr; } .hero-card { min-height:auto; } }
-    @media (max-width:650px) { .shell { width:min(100% - 20px, 1180px); padding-top:12px; } .topbar { align-items:flex-start; border-radius:28px; flex-direction:column; } .nav { justify-content:flex-start; } .hero-card { padding:30px 24px; border-radius:32px; } .controls, .micro-grid { grid-template-columns:1fr; } .section-head { display:block; } }
-    @media (prefers-reduced-motion: reduce) { *, html { scroll-behavior:auto !important; transition:none !important; } }
-  </style>
-</head>
-<body>
-  <main class="shell">
-    <header class="topbar" aria-label="Page navigation">
-      <div class="brand"><span class="brandmark" aria-hidden="true"></span><span>Seattle Date Night</span></div>
-      <nav class="nav">
-        <a href="#filters">Filters</a><a href="#places">Places</a><button class="ghost-btn" id="resetBtn" type="button">Reset</button>
-      </nav>
-    </header>
-
-    <section class="hero" aria-labelledby="pageTitle">
-      <div class="hero-card">
-        <p class="eyebrow">Date night index</p>
-        <h1 id="pageTitle">Where should we eat?</h1>
-        <p>A polished little decision machine for the places worth remembering. Search by craving, mood, price, or pace, then let the page make the choice when nobody wants to decide.</p>
-        <div class="hero-actions">
-          <button class="primary-btn" id="surpriseBtn" type="button">Choose for me</button>
-          <button class="secondary-btn" id="openOnlyBtn" type="button">Show places open now</button>
-        </div>
-      </div>
-      <aside class="spotlight" aria-label="Current pick and stats">
-        <div class="panel clock">
-          <div><span>Seattle time</span><strong id="clockText">--:--</strong></div>
-          <button class="ghost-btn" id="favoritesBtn" type="button">Favorites only</button>
-        </div>
-        <div class="panel picker-card">
-          <div>
-            <p class="eyebrow" style="color:var(--clay); margin-bottom:12px;">Current suggestion</p>
-            <h2 class="pick-title" id="pickName">Tap “Choose for me”</h2>
-            <p class="pick-meta" id="pickMeta">Use the filters first, or let the page choose from what is open now.</p>
-          </div>
-          <div class="card-actions" id="pickActions"></div>
-        </div>
-        <div class="micro-grid">
-          <div class="micro"><b id="totalCount">0</b><span>saved places</span></div>
-          <div class="micro"><b id="openCount">0</b><span>calculated open now</span></div>
-          <div class="micro"><b id="shownCount">0</b><span>showing</span></div>
-        </div>
-      </aside>
-    </section>
-
-    <section id="filters" class="panel" aria-labelledby="filterTitle">
-      <div class="section-head" style="margin-top:0;">
-        <div><h2 id="filterTitle">Find the right kind of place.</h2><p class="hint">Search by craving, neighborhood, price, pace, category, or current status. “Choose for me” will only pick from places open right now.</p></div>
-      </div>
-      <div class="controls">
-        <div class="control"><label for="searchInput">Search</label><input id="searchInput" type="search" placeholder="sushi, Georgetown, coffee, date night..." /></div>
-        <div class="control"><label for="categoryFilter">Category</label><select id="categoryFilter"><option value="all">All</option><option value="food">Food</option><option value="dessert">Dessert</option></select></div>
-        <div class="control"><label for="speedFilter">Pace</label><select id="speedFilter"><option value="all">All</option><option value="quick">Quick</option><option value="normal">Normal</option><option value="slow">Slow</option></select></div>
-        <div class="control"><label for="priceFilter">Price</label><select id="priceFilter"><option value="all">All</option><option value="$">$</option><option value="$$">$$</option><option value="$$$">$$$</option></select></div>
-        <div class="control"><label for="statusFilter">Status</label><select id="statusFilter"><option value="all">All</option><option value="open">Open now</option><option value="hours">Has hours</option><option value="closedPermanent">Permanently closed</option></select></div>
-      </div>
-    </section>
-
-    <section id="places" aria-labelledby="placesTitle">
-      <div class="section-head">
-        <div><h2 id="placesTitle">Places</h2><p class="hint">Each card keeps the useful stuff close: today’s hours, quick notes, map, website, and phone. Limited schedule places only appear when they are actually useful.</p></div>
-      </div>
-      <div class="grid" id="cardsGrid"></div>
-      <div class="empty" id="emptyState">No places match those filters. Loosen the search a little.</div>
-    </section>
-  </main>
-
-<script>
-const PLACES = [{"name": "Musang", "category": "food", "notes": "Modern Filipino on Beacon Hill, incredible sisig and seasonal menu, $$$", "speed": "normal", "price": "$$$", "address": "2524 Beacon Ave S, Seattle, WA 98144, USA", "lat": 47.5803751, "lng": -122.3127377, "weekday_text": ["Monday: 5:00 – 10:00 PM", "Tuesday: Closed", "Wednesday: 5:00 – 10:00 PM", "Thursday: 5:00 – 10:00 PM", "Friday: 5:00 – 10:00 PM", "Saturday: 11:00 AM – 2:00 PM, 5:00 – 10:00 PM", "Sunday: 11:00 AM – 2:00 PM, 5:00 – 10:00 PM"], "website": "https://www.musangseattle.com/", "phone": "(206) 535-5564", "url": "https://maps.google.com/?cid=589181789081006747", "business_status": "OPERATIONAL"}, {"name": "Dough Zone Dumpling House", "category": "food", "notes": "Soup dumplings and noodles, fast and reliable CID spot, $$", "speed": "quick", "price": "$$", "address": "504 5th Ave S #109, Seattle, WA 98104, USA", "lat": 47.5978751, "lng": -122.3274926, "weekday_text": ["Monday: 11:00 AM – 9:00 PM", "Tuesday: 11:00 AM – 9:00 PM", "Wednesday: 11:00 AM – 9:00 PM", "Thursday: 11:00 AM – 9:00 PM", "Friday: 11:00 AM – 10:00 PM", "Saturday: 11:00 AM – 10:00 PM", "Sunday: 11:00 AM – 9:00 PM"], "website": "https://www.doughzonedumplinghouse.com/", "phone": "(206) 285-9999", "url": "https://maps.google.com/?cid=11165046525887535209", "business_status": "OPERATIONAL"}, {"name": "Saigon Drip Cafe", "category": "food", "notes": "Vietnamese dip sandwiches and strong coffee, Pioneer Square, $$", "speed": "quick", "price": "$$", "address": "161 S Washington St, Seattle, WA 98104, USA", "lat": 47.6007541, "lng": -122.3323471, "weekday_text": ["Monday: 9:00 AM – 5:00 PM", "Tuesday: 9:00 AM – 5:00 PM", "Wednesday: 9:00 AM – 5:00 PM", "Thursday: 9:00 AM – 5:00 PM", "Friday: 9:00 AM – 10:00 PM", "Saturday: 10:00 AM – 10:00 PM", "Sunday: 10:00 AM – 4:00 PM"], "website": "http://saigondripcafe.com/", "phone": "(206) 280-1797", "url": "https://maps.google.com/?cid=2683149111059440644", "business_status": "OPERATIONAL"}, {"name": "Berlin Döner Kebab", "category": "food", "notes": "Döner wraps, late night, great downtown quick bite, $$", "speed": "quick", "price": "$$", "address": "428 Westlake Ave N, Seattle, WA 98109, USA", "lat": 47.6226649, "lng": -122.3381333, "weekday_text": ["Monday: 11:00 AM – 8:00 PM", "Tuesday: 11:00 AM – 8:00 PM", "Wednesday: 11:00 AM – 8:00 PM", "Thursday: 11:00 AM – 8:00 PM", "Friday: 11:00 AM – 8:00 PM", "Saturday: Closed", "Sunday: Closed"], "website": "https://www.toasttab.com/the-berliner-doner-kebab-428-westlake-ave-n?utm_source=google&utm_medium=organic&utm_campaign=gmb-oo-web", "phone": "(206) 623-5425", "url": "https://maps.google.com/?cid=718232246654827628", "business_status": "OPERATIONAL"}, {"name": "Marination Ma Kai", "category": "dessert", "notes": "Hawaiian Korean fusion, go for shave ice and Alki views, $$", "speed": "normal", "price": "$$", "address": "1660 Harbor Ave SW, Seattle, WA 98126, USA", "lat": 47.58943619999999, "lng": -122.3805702, "weekday_text": ["Monday: 11:00 AM – 8:00 PM", "Tuesday: 11:00 AM – 8:00 PM", "Wednesday: 11:00 AM – 8:00 PM", "Thursday: 11:00 AM – 8:00 PM", "Friday: 11:00 AM – 9:00 PM", "Saturday: 9:00 AM – 9:00 PM", "Sunday: 9:00 AM – 8:00 PM"], "website": "http://www.marinationmobile.com/", "phone": "(206) 328-8226", "url": "https://maps.google.com/?cid=6485076603440081706", "business_status": "OPERATIONAL"}, {"name": "Salt & Straw", "category": "dessert", "notes": "Creative rotating ice cream flavors, Capitol Hill favorite, $$", "speed": "quick", "price": "$$", "address": "714 E Pike St Suite A, Seattle, WA 98122, USA", "lat": 47.6141937, "lng": -122.3232668, "weekday_text": ["Monday: 11:00 AM – 11:00 PM", "Tuesday: 11:00 AM – 11:00 PM", "Wednesday: 11:00 AM – 11:00 PM", "Thursday: 11:00 AM – 11:00 PM", "Friday: 11:00 AM – 11:00 PM", "Saturday: 11:00 AM – 11:00 PM", "Sunday: 11:00 AM – 11:00 PM"], "website": "https://www.saltandstraw.com/", "phone": "(206) 258-4574", "url": "https://maps.google.com/?cid=8055852349769959677", "business_status": "OPERATIONAL"}, {"name": "Nue", "category": "food", "notes": "Global street food, rotating menu, Capitol Hill favorite, $$", "speed": "normal", "price": "$$", "address": "1519 14th Ave, Seattle, WA 98122, USA", "lat": 47.6147255, "lng": -122.3144481, "weekday_text": ["Monday: 11:00 AM – 9:00 PM", "Tuesday: 5:00 – 9:00 PM", "Wednesday: 5:00 – 9:00 PM", "Thursday: 5:00 – 9:00 PM", "Friday: 11:00 AM – 10:00 PM", "Saturday: 10:00 AM – 10:00 PM", "Sunday: 10:00 AM – 9:00 PM"], "website": "http://www.nueseattle.com/", "phone": "(206) 257-0312", "url": "https://maps.google.com/?cid=12289267041559289933", "business_status": "OPERATIONAL"}, {"name": "Oriental Express", "category": "food", "notes": "SODO Chinese American classic, fast, nostalgic lunch spot, $", "speed": "quick", "price": "$", "address": "2963 4th Ave S, Seattle, WA 98134, USA", "lat": 47.5758303, "lng": -122.3294821, "weekday_text": ["Monday: 10:30 AM – 11:00 PM", "Tuesday: 10:30 AM – 11:00 PM", "Wednesday: 10:30 AM – 11:00 PM", "Thursday: 10:30 AM – 11:00 PM", "Friday: 10:30 AM – 11:00 PM", "Saturday: 11:00 AM – 11:00 PM", "Sunday: 12:00 – 11:00 PM"], "website": "http://www.seattleorientexpress.com/", "phone": "(206) 682-0683", "url": "https://maps.google.com/?cid=7480556571616565291", "business_status": "OPERATIONAL"}, {"name": "Ciudad", "category": "food", "notes": "Seasonal Latin inspired food, stylish Georgetown dinner, $$", "speed": "normal", "price": "$$", "address": "6118 12th Ave S, Seattle, WA 98108, USA", "lat": 47.5482374, "lng": -122.3170496, "weekday_text": ["Monday: 11:30 AM – 8:00 PM", "Tuesday: 11:30 AM – 8:00 PM", "Wednesday: 11:30 AM – 8:00 PM", "Thursday: 11:30 AM – 8:00 PM", "Friday: 11:30 AM – 9:00 PM", "Saturday: 11:30 AM – 9:00 PM", "Sunday: 11:30 AM – 8:00 PM"], "website": "http://www.ciudadseattle.com/", "phone": "(206) 717-2984", "url": "https://maps.google.com/?cid=12407465366145393196", "business_status": "OPERATIONAL"}, {"name": "Maruta Shoten", "category": "food", "notes": "Japanese grocery and deli, great bento and grab and go, $", "speed": "quick", "price": "$", "address": "1024 S Bailey St, Seattle, WA 98108, USA", "lat": 47.5478056, "lng": -122.3190378, "weekday_text": ["Monday: 10:00 AM – 6:00 PM", "Tuesday: 10:00 AM – 6:00 PM", "Wednesday: 10:00 AM – 6:00 PM", "Thursday: 10:00 AM – 6:00 PM", "Friday: 10:00 AM – 6:00 PM", "Saturday: 10:00 AM – 6:00 PM", "Sunday: Closed"], "website": "http://www.marutashoten.com/", "phone": "(206) 767-5002", "url": "https://maps.google.com/?cid=6319113623883067036", "business_status": "OPERATIONAL"}, {"name": "BopBox", "category": "food", "notes": "Korean rice bowls, fast and flavorful Georgetown lunch, $$", "speed": "quick", "price": "$$", "address": "5633 Airport Wy S, Seattle, WA 98108, USA", "lat": 47.5512951, "lng": -122.3192022, "weekday_text": ["Monday: 11:00 AM – 3:00 PM, 4:00 – 8:00 PM", "Tuesday: 11:00 AM – 3:00 PM, 4:00 – 8:00 PM", "Wednesday: 11:00 AM – 3:00 PM, 4:00 – 8:00 PM", "Thursday: 11:00 AM – 3:00 PM, 4:00 – 8:00 PM", "Friday: 11:00 AM – 3:00 PM, 4:00 – 8:00 PM", "Saturday: 11:00 AM – 3:00 PM, 4:00 – 8:00 PM", "Sunday: Closed"], "website": "https://order.toasttab.com/online/bopbox", "phone": "(206) 257-4787", "url": "https://maps.google.com/?cid=12969787587265329481", "business_status": "OPERATIONAL"}, {"name": "Bloom Bistro", "category": "food", "notes": "Bagels! Georgetown, $", "speed": "quick", "price": "$", "address": "6601 Carleton Ave S, Seattle, WA 98108, USA", "lat": 47.5441807, "lng": -122.3213354, "weekday_text": ["Monday: Closed", "Tuesday: 7:00 AM – 5:00 PM", "Wednesday: 7:00 AM – 5:00 PM", "Thursday: 7:00 AM – 5:00 PM", "Friday: 7:00 AM – 5:00 PM", "Saturday: 8:00 AM – 3:00 PM", "Sunday: 8:00 AM – 3:00 PM"], "website": "http://www.bloom-bistro.com/", "phone": "(206) 518-7031", "url": "https://maps.google.com/?cid=10083308330759026731", "business_status": "OPERATIONAL"}, {"name": "Voi Cà Phê", "category": "dessert", "notes": "Vietnamese coffee and pastries, cozy cafe stop, $", "speed": "quick", "price": "$", "address": "6105 13th Ave S, Seattle, WA 98108, USA", "lat": 47.5484118, "lng": -122.3162532, "weekday_text": ["Monday: 8:00 AM – 4:00 PM", "Tuesday: 8:00 AM – 4:00 PM", "Wednesday: 8:00 AM – 4:00 PM", "Thursday: 8:00 AM – 4:00 PM", "Friday: 8:00 AM – 4:00 PM", "Saturday: 8:00 AM – 4:00 PM", "Sunday: Closed"], "website": "http://voicaphe.com/", "phone": null, "url": "https://maps.google.com/?cid=7645227262176573922", "business_status": "OPERATIONAL"}, {"name": "Momiji", "category": "food", "notes": "Sushi and Japanese, beautiful space, reliable dinner, $$", "speed": "normal", "price": "$$", "address": "1522 12th Ave, Seattle, WA 98122, USA", "lat": 47.6147972, "lng": -122.3164889, "weekday_text": ["Monday: 4:00 – 11:00 PM", "Tuesday: 4:00 – 11:00 PM", "Wednesday: 4:00 – 11:00 PM", "Thursday: 4:00 – 11:00 PM", "Friday: 4:00 PM – 12:00 AM", "Saturday: 4:00 PM – 12:00 AM", "Sunday: 4:00 – 11:00 PM"], "website": "http://momijiseattle.com/", "phone": "(206) 457-4068", "url": "https://maps.google.com/?cid=10791137747693922367", "business_status": "OPERATIONAL"}, {"name": "Molly Moon's Homemade Ice Cream", "category": "dessert", "notes": "Classic Seattle ice cream, Alaska Junction, $$", "speed": "quick", "price": "$$", "address": "917 E Pine St, Seattle, WA 98122, USA", "lat": 47.61511100000001, "lng": -122.31977, "weekday_text": ["Monday: 12:00 – 11:00 PM", "Tuesday: 12:00 – 11:00 PM", "Wednesday: 12:00 – 11:00 PM", "Thursday: 12:00 – 11:00 PM", "Friday: 12:00 – 11:00 PM", "Saturday: 12:00 – 11:00 PM", "Sunday: 12:00 – 11:00 PM"], "website": "https://www.mollymoon.com/locations/capitol-hill", "phone": "(206) 294-4389", "url": "https://maps.google.com/?cid=12798367361977727508", "business_status": "OPERATIONAL"}, {"name": "Bakery Nouveau", "category": "dessert", "notes": "Award winning pastries, chocolate croissant dessert stop, $$", "speed": "quick", "price": "$$", "address": "137 15th Ave E, Seattle, WA 98112, USA", "lat": 47.619506, "lng": -122.312902, "weekday_text": ["Monday: Closed", "Tuesday: Closed", "Wednesday: 7:00 AM – 5:00 PM", "Thursday: 7:00 AM – 5:00 PM", "Friday: 7:00 AM – 5:00 PM", "Saturday: 7:00 AM – 5:00 PM", "Sunday: 7:00 AM – 5:00 PM"], "website": "http://www.bakerynouveau.com/", "phone": "(206) 858-6957", "url": "https://maps.google.com/?cid=13746202793565079003", "business_status": "OPERATIONAL"}, {"name": "Taquitos Feliz", "category": "food", "notes": "Taco truck by Lincoln Park, fast and hits every time, $$", "speed": "quick", "price": "$", "address": "7413 Fauntleroy Wy SW, Seattle, WA 98136, USA", "lat": 47.5366162, "lng": -122.3924234, "weekday_text": ["Monday: 10:00 AM – 10:00 PM", "Tuesday: 10:00 AM – 10:00 PM", "Wednesday: 10:00 AM – 10:00 PM", "Thursday: 10:00 AM – 10:00 PM", "Friday: 10:00 AM – 10:00 PM", "Saturday: 10:00 AM – 10:00 PM", "Sunday: 10:00 AM – 9:00 PM"], "website": "http://ordertaquitosfeliz.com/", "phone": "(206) 353-4046", "url": "https://maps.google.com/?cid=4978813847307633745", "business_status": "OPERATIONAL"}, {"name": "Taqueria La Fondita", "category": "food", "notes": "White Center truck, excellent street tacos, $", "speed": "quick", "price": "$", "address": "8953 Aurora Ave N, Seattle, WA 98103, USA", "lat": 47.6940017, "lng": -122.3450245, "weekday_text": ["Monday: 10:00 AM – 10:00 PM", "Tuesday: 10:00 AM – 10:00 PM", "Wednesday: 10:00 AM – 10:00 PM", "Thursday: 10:00 AM – 10:00 PM", "Friday: 10:00 AM – 10:00 PM", "Saturday: 10:00 AM – 10:00 PM", "Sunday: 10:00 AM – 10:00 PM"], "website": null, "phone": "(206) 468-6594", "url": "https://maps.google.com/?cid=14590413675973545399", "business_status": "OPERATIONAL"}, {"name": "Jack's BBQ", "category": "food", "notes": "Texas style BBQ in SODO, brisket and sides, $$", "speed": "quick", "price": "$$", "address": "3924 Airport Wy S, Seattle, WA 98108, USA", "lat": 47.5682792, "lng": -122.3223369, "weekday_text": ["Monday: 7:00 – 10:00 AM, 11:00 AM – 8:00 PM", "Tuesday: 7:00 – 10:00 AM, 11:00 AM – 8:00 PM", "Wednesday: 7:00 – 10:00 AM, 11:00 AM – 8:00 PM", "Thursday: 7:00 – 10:00 AM, 11:00 AM – 8:00 PM", "Friday: 7:00 – 10:00 AM, 11:00 AM – 9:00 PM", "Saturday: 10:00 AM – 9:00 PM", "Sunday: 10:00 AM – 8:00 PM"], "website": "http://jacksbbq.com/", "phone": "(206) 467-4038", "url": "https://maps.google.com/?cid=10668809599050245044", "business_status": "OPERATIONAL"}, {"name": "Hong Kong Market", "category": "food", "notes": "Asian grocery with hot food counter, great cheap meals, $", "speed": "quick", "price": "$", "address": "125 SW 148th St B, Burien, WA 98166, USA", "lat": 47.4698339, "lng": -122.3359436, "weekday_text": ["Monday: 8:00 AM – 8:00 PM", "Tuesday: 8:00 AM – 8:00 PM", "Wednesday: 8:00 AM – 8:00 PM", "Thursday: 8:00 AM – 8:00 PM", "Friday: 8:00 AM – 8:00 PM", "Saturday: 8:00 AM – 8:00 PM", "Sunday: 8:00 AM – 8:00 PM"], "website": "https://www.hkmstores.com/", "phone": "(206) 420-3239", "url": "https://maps.google.com/?cid=2992684964199207215", "business_status": "OPERATIONAL"}, {"name": "Tat's Delicatessen", "category": "food", "notes": "Elite cheesesteaks and sandwiches, fast and satisfying, $$", "speed": "quick", "price": "$$", "address": "159 Yesler Wy, Seattle, WA 98104, USA", "lat": 47.6015936, "lng": -122.3323265, "weekday_text": ["Monday: 9:00 AM – 2:30 PM", "Tuesday: 9:00 AM – 2:30 PM", "Wednesday: 9:00 AM – 2:30 PM", "Thursday: 9:00 AM – 2:30 PM", "Friday: 9:00 AM – 2:30 PM", "Saturday: 11:00 AM – 5:30 PM", "Sunday: Closed"], "website": "http://www.tatsdeli.com/", "phone": "(206) 264-8287", "url": "https://maps.google.com/?cid=8197379568669459050", "business_status": "OPERATIONAL"}, {"name": "Paseo", "category": "food", "notes": "Legendary Caribbean sandwiches, huge portions, $$", "speed": "quick", "price": "$$", "address": "4225 Fremont Ave N, Seattle, WA 98103, USA", "lat": 47.658486, "lng": -122.350311, "weekday_text": ["Monday: 11:00 AM – 6:00 PM", "Tuesday: 11:00 AM – 9:00 PM", "Wednesday: 11:00 AM – 9:00 PM", "Thursday: 11:00 AM – 9:00 PM", "Friday: 11:00 AM – 9:00 PM", "Saturday: 11:00 AM – 7:00 PM", "Sunday: 11:00 AM – 6:00 PM"], "website": "http://www.paseo.com/", "phone": "(206) 545-7440", "url": "https://maps.google.com/?cid=7384135793992419982", "business_status": "OPERATIONAL"}, {"name": "Fuji Bakery", "category": "dessert", "notes": "Japanese pastries and desserts, light and not too sweet, $$", "speed": "quick", "price": "$$", "address": "1030 Elliott Ave W, Seattle, WA 98119, USA", "lat": 47.628317, "lng": -122.3702293, "weekday_text": ["Monday: 7:00 AM – 5:00 PM", "Tuesday: 7:00 AM – 5:00 PM", "Wednesday: 7:00 AM – 5:00 PM", "Thursday: 7:00 AM – 5:00 PM", "Friday: 7:00 AM – 5:00 PM", "Saturday: 7:00 AM – 5:00 PM", "Sunday: 7:00 AM – 4:00 PM"], "website": "http://www.fujibakeryinc.com/", "phone": "(206) 216-3616", "url": "https://maps.google.com/?cid=5322400473830894776", "business_status": "OPERATIONAL"}, {"name": "Meet Fresh", "category": "dessert", "notes": "Taiwanese desserts, taro balls and shaved ice, $$", "speed": "quick", "price": "$$", "address": "223 5th Ave S, Seattle, WA 98104, USA", "lat": 47.6002533, "lng": -122.3278335, "weekday_text": [], "website": "https://meetfresh.us/", "phone": "(206) 538-0048", "url": "https://maps.google.com/?cid=2134575550547142022", "business_status": "CLOSED_PERMANENTLY"}, {"name": "Taurus Ox", "category": "food", "notes": "Lao food, bold flavors, excellent noodles and sausage, $$$", "speed": "normal", "price": "$$$", "address": "903 19th Ave E, Seattle, WA 98112, USA", "lat": 47.6271066, "lng": -122.3076325, "weekday_text": ["Monday: Closed", "Tuesday: 11:00 AM – 2:00 PM, 5:00 – 9:00 PM", "Wednesday: 11:00 AM – 2:00 PM, 5:00 – 9:00 PM", "Thursday: 11:00 AM – 2:00 PM, 5:00 – 9:00 PM", "Friday: 11:00 AM – 2:00 PM, 5:00 – 9:00 PM", "Saturday: 11:00 AM – 2:00 PM, 5:00 – 9:00 PM", "Sunday: Closed"], "website": "http://taurusox.com/", "phone": "(206) 972-0075", "url": "https://maps.google.com/?cid=2203821871373220719", "business_status": "OPERATIONAL"}, {"name": "Meesha Mayne", "category": "food", "notes": "Creative Indian inspired dishes, great date night, $$$", "speed": "normal", "price": "$$$", "address": "127 N 36th St, Seattle, WA 98103, USA", "lat": 47.65249319999999, "lng": -122.3564988, "weekday_text": ["Monday: 4:00 – 9:00 PM", "Tuesday: Closed", "Wednesday: 4:00 – 9:00 PM", "Thursday: 4:00 – 9:00 PM", "Friday: 4:00 – 10:00 PM", "Saturday: 4:00 – 10:00 PM", "Sunday: 4:00 – 9:00 PM"], "website": "https://www.meeshaforyou.com/", "phone": "(206) 632-0135", "url": "https://maps.google.com/?cid=8369219470055174701", "business_status": "OPERATIONAL"}, {"name": "Damn the Weather", "category": "food", "notes": "Cocktail bar you go to for food, great small plates, $$", "speed": "normal", "price": "$$", "address": "116 1st Ave S, Seattle, WA 98104, USA", "lat": 47.601122, "lng": -122.333951, "weekday_text": ["Monday: 11:00 AM – 10:00 PM", "Tuesday: 11:00 AM – 10:00 PM", "Wednesday: 11:00 AM – 10:00 PM", "Thursday: 11:00 AM – 10:00 PM", "Friday: 11:00 AM – 11:00 PM", "Saturday: 11:00 AM – 11:00 PM", "Sunday: 11:00 AM – 9:00 PM"], "website": "http://www.damntheweather.com/", "phone": "(206) 946-1283", "url": "https://maps.google.com/?cid=3851081720853922758", "business_status": "OPERATIONAL"}, {"name": "The Corson Building", "category": "food", "notes": "Special occasion dinner, seasonal and intimate, $$", "speed": "slow", "price": "$$", "address": "5609 Corson Ave S, Seattle, WA 98108, USA", "lat": 47.5519585, "lng": -122.3203615, "weekday_text": ["Monday: Closed", "Tuesday: Closed", "Wednesday: Closed", "Thursday: 6:00 – 9:30 PM", "Friday: 6:00 – 9:30 PM", "Saturday: 5:30 – 9:30 PM", "Sunday: 5:30 – 9:00 PM"], "website": "http://thecorsonbuilding.com/", "phone": "(206) 762-3330", "url": "https://maps.google.com/?cid=11544047859772443308", "business_status": "OPERATIONAL"}, {"name": "Terra Plata", "category": "food", "notes": "Rooftop vibe, Mediterranean leaning, strong date night, $$", "speed": "normal", "price": "$$", "address": "1501 Melrose Ave, Seattle, WA 98122, USA", "lat": 47.6143982, "lng": -122.3280831, "weekday_text": ["Monday: 4:00 – 10:00 PM", "Tuesday: 4:00 – 10:00 PM", "Wednesday: 4:00 – 10:00 PM", "Thursday: 4:00 – 10:00 PM", "Friday: 4:00 – 10:00 PM", "Saturday: 9:30 AM – 10:00 PM", "Sunday: 9:30 AM – 9:00 PM"], "website": "http://terraplata.com/", "phone": "(206) 325-1501", "url": "https://maps.google.com/?cid=16645826047934183778", "business_status": "OPERATIONAL"}, {"name": "Violet", "category": "food", "notes": "Cozy neighborhood spot, thoughtful menu and good drinks, $$$", "speed": "normal", "price": "$$$", "address": "1734 12th Ave, Seattle, WA 98122, USA", "lat": 47.6173159, "lng": -122.3166259, "weekday_text": ["Monday: Closed", "Tuesday: 5:00 – 10:00 PM", "Wednesday: 5:00 – 10:00 PM", "Thursday: 5:00 – 10:00 PM", "Friday: 5:00 – 10:00 PM", "Saturday: 5:00 – 10:00 PM", "Sunday: 5:00 – 10:00 PM"], "website": "https://www.violetseattle.com/", "phone": "(206) 695-2588", "url": "https://maps.google.com/?cid=18261799574552248449", "business_status": "OPERATIONAL"}, {"name": "Hamdi", "category": "food", "notes": "Modern Turkish, excellent Georgetown date night, $$$", "speed": "normal", "price": "$$$", "address": "4012 NW Leary Wy, Seattle, WA 98107, USA", "lat": 47.6565406, "lng": -122.3620072, "weekday_text": ["Monday: Closed", "Tuesday: Closed", "Wednesday: Closed", "Thursday: 5:00 – 9:00 PM", "Friday: 5:00 – 10:00 PM", "Saturday: 5:00 – 10:00 PM", "Sunday: 5:00 – 9:00 PM"], "website": "http://www.hamdiseattle.com/", "phone": "(206) 561-6953", "url": "https://maps.google.com/?cid=3119816545497675669", "business_status": "OPERATIONAL"}, {"name": "Ivar's Acres of Clams", "category": "food", "notes": "Classic Seattle seafood on the water, chowder and views, $$", "speed": "normal", "price": "$$", "address": "1001 Alaskan Wy Ste. 102, Seattle, WA 98104, USA", "lat": 47.6040335, "lng": -122.3395662, "weekday_text": ["Monday: 11:00 AM – 8:00 PM", "Tuesday: 11:00 AM – 8:00 PM", "Wednesday: 11:00 AM – 8:00 PM", "Thursday: 11:00 AM – 8:00 PM", "Friday: 11:00 AM – 8:00 PM", "Saturday: 11:00 AM – 8:00 PM", "Sunday: 11:00 AM – 8:00 PM"], "website": "https://www.ivars.com/acres", "phone": "(206) 624-6852", "url": "https://maps.google.com/?cid=16553677074958837107", "business_status": "OPERATIONAL"}, {"name": "West Seattle Farmers Market", "category": "food", "notes": "Farmers market Sundays, great food vendors and seasonal options, $", "speed": "quick", "price": "$", "address": "Cnr SW Alaska St &, California Ave SW, Seattle, WA 98116, USA", "lat": 47.5619125, "lng": -122.3867874, "weekday_text": ["Monday: Closed", "Tuesday: Closed", "Wednesday: Closed", "Thursday: Closed", "Friday: Closed", "Saturday: Closed", "Sunday: 10:00 AM – 2:00 PM"], "website": "https://seattlefarmersmarkets.org/wsfm", "phone": "(206) 632-5234", "url": "https://maps.google.com/?cid=14865916807631669865", "business_status": "OPERATIONAL"}];
-const TZ = "America/Los_Angeles";
-const state = { search:"", category:"all", speed:"all", price:"all", status:"all", favoritesOnly:false };
-let favorites = JSON.parse(localStorage.getItem("foodListFavorites") || "[]");
-
-const els = {
-  grid: document.getElementById("cardsGrid"), empty: document.getElementById("emptyState"),
-  search: document.getElementById("searchInput"), category: document.getElementById("categoryFilter"), speed: document.getElementById("speedFilter"), price: document.getElementById("priceFilter"), status: document.getElementById("statusFilter"),
-  total: document.getElementById("totalCount"), open: document.getElementById("openCount"), shown: document.getElementById("shownCount"), clock: document.getElementById("clockText"),
-  reset: document.getElementById("resetBtn"), surprise: document.getElementById("surpriseBtn"), openOnly: document.getElementById("openOnlyBtn"), favOnly: document.getElementById("favoritesBtn"),
-  pickName: document.getElementById("pickName"), pickMeta: document.getElementById("pickMeta"), pickActions: document.getElementById("pickActions")
-};
-
-function seattleParts(date = new Date()) {
-  const parts = new Intl.DateTimeFormat("en-US", { timeZone: TZ, weekday:"long", hour:"numeric", minute:"2-digit", hour12:false }).formatToParts(date);
-  const get = t => parts.find(p => p.type === t)?.value;
-  return { weekday: get("weekday"), hour: Number(get("hour")), minute: Number(get("minute")) };
+  ]
 }
-function todayLine(place, date = new Date()) {
-  const day = seattleParts(date).weekday;
-  return (place.weekday_text || []).find(line => line.startsWith(day + ":")) || "";
-}
-function cleanHoursText(text) { return (text || "").replace(/[\u2009\u202f]/g, " ").replace(/\s+/g, " ").trim(); }
-function displayTodayHours(place) {
-  const line = cleanHoursText(todayLine(place));
-  if (!line) return "Hours not listed";
-  return line.replace(/^[A-Za-z]+:\s*/, "");
-}
-function parseTime(raw, fallbackMeridiem, endHourForInference) {
-  raw = cleanHoursText(raw);
-  const m = raw.match(/^(\d{1,2})(?::(\d{2}))?\s*(AM|PM)?$/i);
-  if (!m) return null;
-  let h = Number(m[1]), min = Number(m[2] || 0), mer = (m[3] || fallbackMeridiem || "").toUpperCase();
-  if (!mer) mer = "PM";
-  if (mer === "PM" && h !== 12) h += 12;
-  if (mer === "AM" && h === 12) h = 0;
-  return h * 60 + min;
-}
-function intervalsForToday(place) {
-  const text = displayTodayHours(place);
-  if (!text || /closed/i.test(text) || /not listed/i.test(text)) return [];
-  return text.split(",").map(part => cleanHoursText(part)).map(range => {
-    const pieces = range.split(/\s*[–-]\s*/);
-    if (pieces.length < 2) return null;
-    const endMer = pieces[1].match(/\b(AM|PM)\b/i)?.[1]?.toUpperCase();
-    let startMer = pieces[0].match(/\b(AM|PM)\b/i)?.[1]?.toUpperCase() || endMer;
-    let start = parseTime(pieces[0], startMer);
-    let end = parseTime(pieces[1], endMer);
-    if (start == null || end == null) return null;
-    if (end <= start) end += 24 * 60;
-    return [start, end];
-  }).filter(Boolean);
-}
-function calculatedStatus(place) {
-  if (place.business_status === "CLOSED_PERMANENTLY") return { key:"bad", label:"Permanently closed" };
-  const intervals = intervalsForToday(place);
-  if (!intervals.length) return { key:"closed", label: displayTodayHours(place) === "Closed" ? "Closed today" : "Hours not listed" };
-  const now = seattleParts();
-  const minutes = now.hour * 60 + now.minute;
-  const open = intervals.some(([s,e]) => minutes >= s && minutes < e);
-  return { key: open ? "open" : "closed", label: open ? "Open now" : "Closed now" };
-}
-function placeText(place) { return [place.name, place.notes, place.address, place.category, place.speed, place.price].join(" ").toLowerCase(); }
-function isLimitedSchedulePlace(place) {
-  return /farmers market/i.test(place.name || "");
-}
-function shouldHideByDefault(place) {
-  const status = calculatedStatus(place);
-  if (place.business_status === "CLOSED_PERMANENTLY" && state.status !== "closedPermanent") return true;
-  if (isLimitedSchedulePlace(place) && status.key !== "open" && state.status !== "closedPermanent") return true;
-  return false;
-}
-function matches(place) {
-  const status = calculatedStatus(place);
-  if (shouldHideByDefault(place)) return false;
-  if (state.favoritesOnly && !favorites.includes(place.name)) return false;
-  if (state.search && !placeText(place).includes(state.search.toLowerCase())) return false;
-  if (state.category !== "all" && place.category !== state.category) return false;
-  if (state.speed !== "all" && place.speed !== state.speed) return false;
-  if (state.price !== "all" && place.price !== state.price) return false;
-  if (state.status === "open" && status.key !== "open") return false;
-  if (state.status === "hours" && !(place.weekday_text || []).length) return false;
-  if (state.status === "closedPermanent" && place.business_status !== "CLOSED_PERMANENTLY") return false;
-  return true;
-}
-function card(place) {
-  const status = calculatedStatus(place); const today = displayTodayHours(place); const isFav = favorites.includes(place.name);
-  const hours = (place.weekday_text || []).map(line => `<li class="${line === todayLine(place) ? "today-line" : ""}">${cleanHoursText(line)}</li>`).join("") || "<li>Hours not listed</li>";
-  return `<article class="card ${place.business_status === "CLOSED_PERMANENTLY" ? "closed-permanent" : ""}">
-    <div class="card-head"><div><h3>${place.name}</h3><div class="chips"><span class="chip">${place.category}</span><span class="chip">${place.speed}</span><span class="chip">${place.price || "?"}</span><span class="chip status ${status.key}">${status.label}</span></div></div>
-    <button class="heart ${isFav ? "active" : ""}" type="button" aria-label="Toggle favorite for ${place.name}" data-fav="${place.name}">${isFav ? "♥" : "♡"}</button></div>
-    <p class="notes">${place.notes || ""}</p>
-    <div class="today"><small>Today’s posted hours</small><b>${today}</b></div>
-    <p class="address">${place.address || ""}</p>
-    <details><summary>Weekly hours</summary><ul class="hours-list">${hours}</ul></details>
-    <div class="card-actions">${place.url ? `<a href="${place.url}" target="_blank" rel="noopener">Map</a>` : ""}${place.website ? `<a href="${place.website}" target="_blank" rel="noopener">Website</a>` : ""}${place.phone ? `<a href="tel:${place.phone}">Call</a>` : ""}</div>
-  </article>`;
-}
-function filteredPlaces() { return PLACES.filter(matches); }
-function render() {
-  const list = filteredPlaces();
-  els.grid.innerHTML = list.map(card).join("");
-  els.empty.style.display = list.length ? "none" : "block";
-  els.total.textContent = PLACES.length;
-  els.open.textContent = PLACES.filter(p => calculatedStatus(p).key === "open").length;
-  els.shown.textContent = list.length;
-  els.favOnly.textContent = state.favoritesOnly ? "All places" : "Favorites only";
-  els.grid.querySelectorAll("[data-fav]").forEach(btn => btn.addEventListener("click", () => toggleFavorite(btn.dataset.fav)));
-}
-function toggleFavorite(name) {
-  favorites = favorites.includes(name) ? favorites.filter(n => n !== name) : [...favorites, name];
-  localStorage.setItem("foodListFavorites", JSON.stringify(favorites)); render();
-}
-function choose() {
-  const list = filteredPlaces().filter(p => {
-    const status = calculatedStatus(p);
-    return p.business_status !== "CLOSED_PERMANENTLY" && !shouldHideByDefault(p) && status.key === "open";
-  });
-  if (!list.length) {
-    els.pickName.textContent = "Nothing open matches this";
-    els.pickMeta.textContent = "Try clearing a filter, changing the price or pace, or checking the full list.";
-    els.pickActions.innerHTML = "";
-    return;
-  }
-  const p = list[Math.floor(Math.random() * list.length)]; const status = calculatedStatus(p);
-  els.pickName.textContent = p.name;
-  els.pickMeta.textContent = `${p.notes} Today: ${displayTodayHours(p)}. ${status.label}.`;
-  els.pickActions.innerHTML = `${p.url ? `<a href="${p.url}" target="_blank" rel="noopener">Open map</a>` : ""}${p.website ? `<a href="${p.website}" target="_blank" rel="noopener">Website</a>` : ""}`;
-}
-function resetFilters() {
-  Object.assign(state, {search:"", category:"all", speed:"all", price:"all", status:"all", favoritesOnly:false});
-  els.search.value=""; els.category.value="all"; els.speed.value="all"; els.price.value="all"; els.status.value="all"; render();
-}
-["search","category","speed","price","status"].forEach(key => els[key].addEventListener(key === "search" ? "input" : "change", e => { state[key] = e.target.value; render(); }));
-els.reset.addEventListener("click", resetFilters);
-els.surprise.addEventListener("click", choose);
-els.openOnly.addEventListener("click", () => { state.status="open"; els.status.value="open"; render(); document.getElementById("places").scrollIntoView({behavior:"smooth"}); });
-els.favOnly.addEventListener("click", () => { state.favoritesOnly = !state.favoritesOnly; render(); });
-function tick() { els.clock.textContent = new Intl.DateTimeFormat("en-US", { timeZone: TZ, hour:"numeric", minute:"2-digit" }).format(new Date()); }
-tick(); setInterval(() => { tick(); render(); }, 60000); render();
-</script>
-</body>
-</html>
