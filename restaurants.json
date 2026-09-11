@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-10T13:26:07.697Z",
+  "generated_at": "2026-09-11T13:22:59.484Z",
   "source_csv": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ9pFuDf9lpudF0_WfUJ2cJlbowZMmtV9VYxnTDeSq4uFMRUnm3yMZzro982N_C9WrDoXYf9GH_5VM5/pub?output=csv",
   "counts": {
     "total_rows": 33,
-    "places_ok": 0,
-    "places_failed": 33
+    "places_ok": 1,
+    "places_failed": 32
   },
   "restaurants": [
     {
@@ -521,20 +521,25 @@
       "notes": "Japanese pastries and desserts, light and not too sweet, $$",
       "speed": "quick",
       "price": "$$",
-      "address": null,
-      "lat": null,
-      "lng": null,
-      "open_now": null,
-      "weekday_text": [],
-      "website": null,
-      "phone": null,
-      "url": "https://maps.google.com/?q=Fuji+Bakery+Seattle",
-      "next_close_iso": null,
-      "business_status": null,
-      "_error": {
-        "status": "REQUEST_DENIED",
-        "message": "You must enable Billing on the Google Cloud Project at https://console.cloud.google.com/project/_/billing/enable Learn more at https://developers.google.com/maps/gmp-get-started"
-      }
+      "address": "1030 Elliott Ave W, Seattle, WA 98119, USA",
+      "lat": 47.628317,
+      "lng": -122.3702293,
+      "open_now": false,
+      "weekday_text": [
+        "Monday: 7:00 AM – 5:00 PM",
+        "Tuesday: 7:00 AM – 5:00 PM",
+        "Wednesday: 7:00 AM – 5:00 PM",
+        "Thursday: 7:00 AM – 5:00 PM",
+        "Friday: 7:00 AM – 5:00 PM",
+        "Saturday: 7:00 AM – 5:00 PM",
+        "Sunday: 7:00 AM – 4:00 PM"
+      ],
+      "website": "http://www.fujibakeryinc.com/",
+      "phone": "(206) 216-3616",
+      "url": "https://maps.google.com/?cid=5322400473830894776",
+      "next_close_iso": "2026-09-12T00:00:00.000Z",
+      "business_status": "OPERATIONAL",
+      "utc_offset": -420
     },
     {
       "name": "Meet Fresh",
